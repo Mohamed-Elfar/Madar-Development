@@ -1,30 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
-import TrainingProcessCard from "../../components/training/TrainingProcessCard/TrainingProcessCard";
 import "./InstitutionalDevelopment.css";
 import { useTranslation } from "react-i18next";
 
 export default function InstitutionalDevelopment() {
   const { t } = useTranslation();
-
-  const services = [
-    {
-      icon: "/images/association-small.webp",
-      title: t("institutional.services.0.title"),
-      description: t("institutional.services.0.desc"),
-    },
-    {
-      icon: "/images/association-medium.webp",
-      title: t("institutional.services.1.title"),
-      description: t("institutional.services.1.desc"),
-    },
-    {
-      icon: "/images/association-large.webp",
-      title: t("institutional.services.2.title"),
-      description: t("institutional.services.2.desc"),
-    },
-  ];
 
   return (
     <>
@@ -51,21 +32,75 @@ export default function InstitutionalDevelopment() {
         </div>
       </div>
 
-      <section className="py-16 bg-primary-50 text-center">
+      <section className="py-16 bg-primary-50 text-center m-0">
         <SectionHeader
           title={t("institutional.servicesSectionTitle")}
           lineColor="#FFE047"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-7xl mx-auto px-4">
-          {services.map((s, idx) => (
-            <TrainingProcessCard
-              key={idx}
-              icon={s.icon}
-              title={s.title}
-              description={s.description}
-            />
-          ))}
+        <div className="mt-12 max-w-7xl mx-auto px-4">
+          {/* Render the three pricing tables: Emerging, Mid-sized, Large */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {[
+              {
+                key: "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ",
+                title: t(
+                  "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.title"
+                ),
+              },
+              {
+                key: "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ",
+                title: t(
+                  "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ.title"
+                ),
+              },
+              {
+                key: "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى",
+                title: t(
+                  "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى.title"
+                ),
+              },
+            ].map((tbl) => {
+              const items = t(tbl.key + ".items", { returnObjects: true });
+              const isArray = Array.isArray(items) && items.length > 0;
+              return (
+                <div
+                  className="bg-white rounded-md p-6 shadow-sm"
+                  key={tbl.key}
+                >
+                  <h3 className="text-lg font-semibold mb-4">{tbl.title}</h3>
+                  <div className="emerging-table-wrap">
+                    <table className="emerging-table w-full" role="table">
+                      <thead>
+                        <tr>
+                          <th>{t("scopeOfServices.table.service")}</th>
+                          <th>{t("scopeOfServices.table.price")}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {(isArray ? items : []).map((it, idx) => (
+                          <tr key={idx}>
+                            <td>{it.title}</td>
+                            <td className="pricing-price">{it.price}</td>
+                          </tr>
+                        ))}
+                        {!isArray && (
+                          <tr>
+                            <td colSpan={2} className="text-gray-500">
+                              {t(
+                                "scopeOfServices.noPricesAvailable",
+                                "Prices not available"
+                              )}
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </>

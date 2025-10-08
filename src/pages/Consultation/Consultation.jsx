@@ -399,7 +399,7 @@ export default function Consultation() {
             <h3>{t("consultation.contact.connect")}</h3>
             <ul>
               <li>
-                <FontAwesomeIcon icon={faEnvelope} /> info@consulrain.com
+                <FontAwesomeIcon icon={faEnvelope} /> info@madardevelopment.com
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhone} />

@@ -5,17 +5,21 @@ import TrainingBusinessLines from "../../components/TrainingBusinessLines/Traini
 import ScopeOfServices from "../../components/ScopeOfServices/ScopeOfServices";
 import { Helmet } from "react-helmet-async";
 export default function TrainingPage() {
-  return (<>
+  return (
+    <>
       <Helmet>
         <title>Training | ConsulRain</title>
-        <meta name="description" content="Discover ConsulRain's training programs, business lines, and our process for empowering your team." />
+        <meta
+          name="description"
+          content="Discover ConsulRain's training programs, business lines, and our process for empowering your team."
+        />
       </Helmet>
       <div>
         <HeroSection />
         <TrainingIntroSection />
-        <ScopeOfServices />
         <TrainingProcessSection />
-      <TrainingBusinessLines />
-    </div></>
+        {/* <TrainingBusinessLines /> */}
+      </div>
+    </>
   );
 }

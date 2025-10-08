@@ -65,7 +65,7 @@
     "tel": "Tel.No",
     "phoneValue": "+966540478767",
     "email": "Email",
-    "emailValue": "info@madar.dev",
+    "emailValue": "info@madardevelopment.com",
     "social": "Social",
     "socialValue": "@madar",
     "sendTitle": "Send Us a Message",
@@ -151,17 +151,17 @@
     "yourRights": "Your rights and choices",
     "yourRightsDesc": "Depending on your jurisdiction, you may have rights to access, correct, or delete personal information we hold about you. To exercise those rights or for questions about your data, contact us at the details below.",
     "contactTitle": "Contact",
-    "contactEmail": "info@madar.dev",
+    "contactEmail": "info@madardevelopment.com",
     "contactPhone": "+966 540 478 767",
     "contactAddress": "Riyadh, Saudi Arabia",
     "requestPermission": "Request for Permission",
     "requestPermissionDesc": "To request permission for use of any content or branding, please contact us at:",
-    "email": "info@madar.dev",
+    "email": "info@madardevelopment.com",
     "phone": "+966540478767",
     "ipNotice": "Intellectual Property Notice",
     "ipNoticeDesc": "All content on this website — including text, graphics, logos, icons, images, and design elements — is the property of MADAR DEVELOPMENT or its licensors and is protected by copyright, trademark, and other intellectual property laws. Unauthorized copying, reproduction, distribution, or use is prohibited.",
     "prohibitedUse": "Prohibited use and permissions",
-    "prohibitedUseDesc": "You may not reproduce, republish, distribute, or commercialize any content from this site without prior written permission from MADAR DEVELOPMENT. Unauthorized use may result in legal action. To request permission, contact us at info@madar.dev or +966 540 478 767.",
+    "prohibitedUseDesc": "You may not reproduce, republish, distribute, or commercialize any content from this site without prior written permission from MADAR DEVELOPMENT. Unauthorized use may result in legal action. To request permission, contact us at info@madardevelopment.com or +966 540 478 767.",
     "prohibitedUseList": [
       "You may not reproduce, republish, distribute, or commercialize any content from this site without prior written permission from MADAR DEVELOPMENT.",
       "Unauthorized use may result in legal action."
@@ -286,29 +286,39 @@
     },
     "introSection": {
       "title": "Training That",
-      "description": "At ConsulRain, we believe in the power of training to transform. We go beyond conventional workshops to deliver immersive learning experiences, thoughtfully aligned with your business priorities.",
+      "description": "Our programmes build practical capabilities across the full training lifecycle — from preparing trainers to designing winning project proposals and strengthening nonprofit financial systems. Each course is hands‑on, context‑aware, and designed to convert learning into measurable organisational impact.",
       "highlightedWord": "Transforms",
-      "text1": "We go beyond conventional workshops",
-      "text2": "Each training journey follows a meticulously crafted process"
+      "text1": "Practical, context-driven training for real impact",
+      "text2": "Programs range from trainer preparation to project management, fundraising and technical reporting",
+      "courses": [
+        "Training of Trainers: Design & Management of Development Projects",
+        "Nonprofit Organization Management",
+        "Project Management",
+        "Project Proposal Design & Writing",
+        "Smart Financial Management for Nonprofit Organizations",
+        "Designing Community Initiatives",
+        "Technical Reporting & Project Closure",
+        "Specialist Training in Fundraising & Resource Development for Nonprofits"
+      ]
     },
     "trainingProcess": {
-      "title": "Meticulously crafted process",
+      "title": "Our practical training process",
       "highlightedWord": "Delivers",
       "steps": {
         "1": {
-          "title": "Pre-Training Diagnosis",
-          "description": "We start a comprehensive gap analysis to evaluate the current business performance, identifying skills and competences gaps.",
-          "note": "Fees could be applied"
+          "title": "Training of Trainers",
+          "description": "Prepare internal trainers with adult‑learning techniques, course design and facilitation skills so your organisation can scale learning independently.",
+          "note": "Includes practical facilitation exercises"
         },
         "2": {
-          "title": "Customized Training Programs",
-          "description": "From leadership and soft skills to technical and industry-specific topics, we craft solutions tailored to each department’s needs. Our programs are led by experienced trainers and subject-matter experts who translate knowledge into measurable impact."
+          "title": "Project Management & Proposal Writing",
+          "description": "Hands‑on modules covering the lifecycle of development projects and step‑by‑step guidance to design and write competitive funding proposals.",
+          "note": "Templates and practical workshops included"
         },
-
         "3": {
-          "title": "Post-Training Evaluation",
-          "description": "We turn learning impact into numbers. Through tailored metrics and detailed reporting, we measure the impact of each training on performance and productivity, translating progress into trackable numbers.",
-          "note": "Fees could be applied"
+          "title": "Fundraising, Financial Systems & Reporting",
+          "description": "Strengthen nonprofit financial management, resource mobilisation channels and technical reporting skills to improve sustainability and donor confidence.",
+          "note": "Certificate on successful completion"
         }
       }
     },
@@ -561,6 +571,7 @@
       "service": "Service",
       "price": "Price"
     },
+    "noPricesAvailable": "Prices not available",
     "currency": "SR",
     "serviceDetails": {
       "institutionalDevelopment": {

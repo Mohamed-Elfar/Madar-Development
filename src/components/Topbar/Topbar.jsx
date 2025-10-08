@@ -4,7 +4,7 @@ import "./topbar.css";
 
 export default function Topbar() {
   const { t } = useTranslation();
-  const contactEmail = "info@consulrain.com";
+  const contactEmail = "info@madardevelopment.com";
   const contactPhone = "+966540478767";
   const socialLinks = [
     {

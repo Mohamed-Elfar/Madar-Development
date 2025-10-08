@@ -1,0 +1,84 @@
+:root {
+  --brand-green: #189748;
+}
+.training-intro {
+  color: #0f172a;
+}
+.training-left {
+  padding: 1rem;
+}
+.training-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.training-list-grid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.training-courses-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.course-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+  font-size: 1rem;
+}
+.course-icon {
+  display: inline-flex;
+
+  border-radius: 50%;
+  background: var(--brand-green);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+.course-icon svg {
+  width: 14px;
+  height: 14px;
+  color: white;
+}
+.course-text {
+  line-height: 1.5;
+}
+.training-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* RTL support */
+html[lang="ar"] .training-left {
+  text-align: right;
+}
+html[lang="ar"] .training-courses {
+  direction: rtl;
+}
+
+/* Mobile: stack the two course columns into a single column */
+@media (max-width: 640px) {
+  .training-list-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .training-courses-col {
+    width: 100%;
+  }
+
+  /* ensure icons and text remain aligned on small screens */
+  .course-item {
+    align-items: center;
+  }
+
+  /* make the right-side image sit above the content on very small screens for better UX */
+  .training-right {
+    order: -1;
+  }
+}

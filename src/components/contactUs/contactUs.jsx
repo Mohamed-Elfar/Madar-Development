@@ -218,10 +218,10 @@ export default function ContactUs() {
                       className="contact-phone-link"
                       href={`mailto:${t(
                         "contact.emailValue",
-                        "info@madar.dev"
+                        "info@madardevelopment.com"
                       )}`}
                     >
-                      {t("contact.emailValue", "info@madar.dev")}
+                      {t("contact.emailValue", "info@madardevelopment.com")}
                     </a>
                   </div>
                 </div>
@@ -283,8 +283,7 @@ export default function ContactUs() {
                   rel="noreferrer"
                   aria-label={item.label}
                   data-aos="fade-up"
-                  data-aos-delay={idx * 150} 
-
+                  data-aos-delay={idx * 150}
                 >
                   <i className={`${item.icon}`} aria-hidden="true"></i>
                 </a>

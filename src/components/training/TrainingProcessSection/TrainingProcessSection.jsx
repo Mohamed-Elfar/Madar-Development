@@ -26,7 +26,7 @@ export default function TrainingProcessSection() {
   ];
 
   return (
-    <section className="py-16 bg-primary-50 text-center">
+    <section className="py-16 bg-primary-50 text-center m-0">
       <SectionHeader
         title={t("training.trainingProcess.title")}
         // highlightedWord={t("training.trainingProcess.highlightedWord")}
