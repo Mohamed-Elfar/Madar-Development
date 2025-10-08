@@ -72,9 +72,10 @@ const ScopeOfServices = () => {
   ];
 
   const normalize = (s) =>
-    String(s)
+    String(s || "")
       .trim()
-      .replace(/[.\u0600-\u06FF\p{P}]/gu, "")
+      // keep Arabic letters and basic punctuation handling; don't strip Arabic letters
+      .replace(/[.\p{P}]/gu, "")
       .toLowerCase();
 
   const formatPrice = (price) => {
@@ -91,10 +92,46 @@ const ScopeOfServices = () => {
     return `${p} ${currency}`;
   };
 
-  const handleSubserviceClick = (svc) => {
+  // fallback parser: if translations return a long string instead of items array,
+  // try to parse lines that contain a price and return structured items
+  const parseDescriptionToItems = (desc) => {
+    if (!desc) return [];
+    if (Array.isArray(desc)) return desc;
+    const lines = String(desc)
+      .split(/\n|\\r\\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    const items = [];
+    lines.forEach((line) => {
+      // attempt to find a price in the line (Arabic or Western digits)
+      const m = line.match(/(\d+[\d,\s]*)\s*(SR|ر\.س|ريال)?/i);
+      if (m) {
+        const price = m[1].replace(/\s+/g, "");
+        const title = line
+          .replace(m[0], "")
+          .replace(/[-—–:\u0600-\u06FF\p{P}]+$/u, "")
+          .trim();
+        items.push({ title: title || line, price });
+      } else {
+        // if no price found, push as title-only with empty price
+        items.push({ title: line, price: "" });
+      }
+    });
+    return items;
+  };
+
+  // accept optional index to robustly detect the first institutional subservice
+  const handleSubserviceClick = (svc, index = -1) => {
     const text = svc.title || svc;
+    // If it's the first subservice (index 0) assume it's the Emerging Associations entry
+    if (index === 0) {
+      setModalTitle(text);
+      setSelectedService("emergingAssociations");
+      return;
+    }
+
     const norm = normalize(text);
-    // If the clicked subservice matches the emerging associations item, open the modal and show prices there
+    // fallback text-based detection for other languages
     if (
       norm.includes("services for emerging") ||
       norm.includes("المنظمات الناشئة") ||
@@ -104,6 +141,7 @@ const ScopeOfServices = () => {
       setSelectedService("emergingAssociations");
       return;
     }
+
     // fallback: open the modal for other subservices (use title text)
     setModalTitle(text);
     setSelectedService(text || svc);
@@ -183,10 +221,10 @@ const ScopeOfServices = () => {
                                 className="flex items-center text-gray-700 service-subitem"
                                 role="button"
                                 tabIndex={0}
-                                onClick={() => handleSubserviceClick(svc)}
+                                onClick={() => handleSubserviceClick(svc, i)}
                                 onKeyDown={(e) =>
                                   e.key === "Enter" &&
-                                  handleSubserviceClick(svc)
+                                  handleSubserviceClick(svc, i)
                                 }
                               >
                                 <svg
@@ -253,17 +291,29 @@ const ScopeOfServices = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {(
-                    t(
+                  {(function () {
+                    // try to read structured items from translations first
+                    const translated = t(
                       "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.items",
                       { returnObjects: true }
-                    ) || emergingAssociationsDetails
-                  ).map((it, idx) => (
-                    <tr key={idx}>
-                      <td>{it.title}</td>
-                      <td className="pricing-price">{formatPrice(it.price)}</td>
-                    </tr>
-                  ))}
+                    );
+                    let items = [];
+                    if (Array.isArray(translated) && translated.length > 0) {
+                      items = translated;
+                    } else if (typeof translated === "string") {
+                      items = parseDescriptionToItems(translated);
+                    } else {
+                      items = emergingAssociationsDetails;
+                    }
+                    return items.map((it, idx) => (
+                      <tr key={idx}>
+                        <td>{it.title}</td>
+                        <td className="pricing-price">
+                          {formatPrice(it.price)}
+                        </td>
+                      </tr>
+                    ));
+                  })()}
                 </tbody>
               </table>
             </div>

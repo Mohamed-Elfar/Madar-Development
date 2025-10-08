@@ -107,6 +107,11 @@ html[lang="ar"] .pricing-list li {
   border-collapse: collapse;
   margin-top: 8px;
 }
+
+/* Keep column ordering consistent with English (LTR layout) while still right-aligning Arabic text */
+.emerging-table {
+  direction: ltr;
+}
 .emerging-table th,
 .emerging-table td {
   padding: 8px 10px;
@@ -132,4 +137,21 @@ html[lang="ar"] .pricing-list li {
 html[lang="ar"] .emerging-table th,
 html[lang="ar"] .emerging-table td {
   text-align: right;
+}
+
+/* For Arabic, flip table visual ordering so Service column appears on the right
+   and Price column appears on the left. Keep service text right-aligned and
+   price cells left-aligned for better readability. */
+html[lang="ar"] .emerging-table {
+  direction: rtl;
+}
+html[lang="ar"] .emerging-table th:first-child,
+html[lang="ar"] .emerging-table td:first-child {
+  /* first-child in the DOM is Service; in RTL this visually appears on the right */
+  text-align: right;
+}
+html[lang="ar"] .emerging-table th:last-child,
+html[lang="ar"] .emerging-table td:last-child {
+  /* last-child in the DOM is Price; in RTL this visually appears on the left */
+  text-align: left;
 }
