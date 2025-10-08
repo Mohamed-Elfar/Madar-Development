@@ -70,6 +70,178 @@
   }
 }
 
-.animate-fade-in {
-  animation: fadeInUp 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+:root {
+  --brand-green: #189748;
+  --brand-green-lean: #dff4ea;
+}
+
+.privacy-policy-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: none; /* removed background gradient to let page use site background */
+  padding: 0; /* full-bleed layout handled by card padding using vw */
+}
+
+.privacy-policy-card {
+  background: #ffffff;
+  /* full-bleed card that uses vw for horizontal padding so content breathes on large screens */
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 100vw;
+  width: 100vw;
+  padding: 36px 6vw;
+  border-left: none;
+  animation: fadeInUp 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.privacy-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.privacy-meta {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.95rem;
+}
+
+.privacy-section {
+  margin-bottom: 28px;
+}
+
+.privacy-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-green);
+  margin-bottom: 10px;
+  letter-spacing: 0.25px;
+}
+
+/* ensure anchor links position headings below sticky headers */
+.privacy-heading,
+.privacy-subheading {
+  scroll-margin-top: 8vh; /* works with the JS offset as well */
+}
+
+/* transient highlight applied to section when user clicks sidebar link */
+.privacy-highlight {
+  box-shadow: 0 8px 30px rgba(24, 151, 72, 0.12),
+    0 0 0 4px rgba(24, 151, 72, 0.06) inset;
+  transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.privacy-subheading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.privacy-list {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  color: #0b0b0b;
+  font-size: 1rem;
+}
+
+.privacy-contact {
+  color: var(--brand-green);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-left: 6px;
+}
+
+/* CTA style for any links inside the policy */
+.privacy-contact.button-like {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--brand-green), #1fb86a);
+  color: #fff !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* direction-aware adjustments */
+html[lang="ar"] .privacy-policy-card,
+[dir="rtl"] .privacy-policy-card {
+  text-align: right;
+  direction: rtl;
+  border-left: none;
+  border-right: 6px solid var(--brand-green);
+}
+
+html[lang="ar"] .privacy-list,
+[dir="rtl"] .privacy-list {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* Grid layout: sticky sidebar on wider screens */
+.privacy-grid {
+  display: grid;
+  /* use a vw-based left column for sidebar and flexible content column */
+  grid-template-columns: minmax(200px, 18vw) 1fr;
+  gap: 4vw;
+  align-items: start;
+  width: 100%;
+}
+
+.privacy-sidebar {
+  position: sticky;
+  top: 8vh;
+  align-self: start;
+  background: transparent;
+  padding-left: 1vw;
+}
+
+.privacy-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-sidebar-link {
+  display: block;
+  padding: 8px 10px;
+  color: #064e36;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.privacy-sidebar-link:hover {
+  background: var(--brand-green-lean);
+}
+
+.privacy-content {
+  max-width: 100%;
+}
+
+/* Mobile: collapse into single column and hide sidebar */
+@media (max-width: 880px) {
+  .privacy-grid {
+    grid-template-columns: 1fr;
+  }
+  .privacy-sidebar {
+    display: none;
+  }
+  .privacy-policy-card {
+    padding: 28px 5vw;
+  }
 }

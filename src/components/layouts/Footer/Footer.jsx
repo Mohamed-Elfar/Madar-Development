@@ -112,16 +112,22 @@ export default function Footer() {
               <ul className="cat-dropdown-menu">
                 {[
                   { label: t("footer.training.Training"), path: "/training" },
-                  { label: t("navbar.consultation"), path: "/consultation" },
                   {
-                    label: t("institutional.title"),
-                    path: "/institutional-development",
+                    label: t("navbar.consultation"),
+                    path: "/consultation",
+                    children: [
+                      {
+                        // localized 'Consulting Services' as a subpage that links to the institutional page
+                        label: t("consultation.title"),
+                        path: "/institutional-development",
+                      },
+                    ],
                   },
                   {
                     label: t("navbar.feasibilityStudies"),
                     path: "/feasibility-study",
                   },
-                ].map(({ label, path }, index) => (
+                ].map(({ label, path, children }, index) => (
                   <li key={index} className="footer-li text-white">
                     <NavLink
                       to={path}
@@ -129,6 +135,26 @@ export default function Footer() {
                     >
                       {label}
                     </NavLink>
+
+                    {children && (
+                      <ul
+                        className={`mt-2 ${
+                          isArabic ? "text-right" : "text-left"
+                        } ml-4`}
+                        style={{ listStyle: "none" }}
+                      >
+                        {children.map((c, ci) => (
+                          <li key={ci} className="text-white">
+                            <NavLink
+                              to={c.path}
+                              className="text-sm hover:text-white block"
+                            >
+                              {c.label}
+                            </NavLink>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -130,6 +130,20 @@ const ScopeOfServices = () => {
       return;
     }
 
+    // If it's the second subservice (index 1) assume it's Mid-sized Associations
+    if (index === 1) {
+      setModalTitle(text);
+      setSelectedService("midSizedAssociations");
+      return;
+    }
+
+    // If it's the third subservice (index 2) assume it's Large Associations
+    if (index === 2) {
+      setModalTitle(text);
+      setSelectedService("largeAssociations");
+      return;
+    }
+
     const norm = normalize(text);
     // fallback text-based detection for other languages
     if (
@@ -270,18 +284,40 @@ const ScopeOfServices = () => {
         <ServiceModal
           isOpen={!!selectedService}
           onClose={handleCloseModal}
-          title={
-            selectedService === "emergingAssociations"
-              ? ensureDot(
-                  modalTitle ||
-                    t("scopeOfServices.services.institutionalDevelopment")
-                )
-              : ensureDot(
-                  t(`scopeOfServices.serviceDetails.${selectedService}.title`)
-                )
-          }
+          title={(() => {
+            if (selectedService === "emergingAssociations") {
+              return ensureDot(
+                modalTitle ||
+                  t(
+                    "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.title"
+                  )
+              );
+            }
+            if (selectedService === "midSizedAssociations") {
+              return ensureDot(
+                modalTitle ||
+                  t(
+                    "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ.title"
+                  )
+              );
+            }
+            if (selectedService === "largeAssociations") {
+              return ensureDot(
+                modalTitle ||
+                  t(
+                    "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى.title"
+                  )
+              );
+            }
+            return ensureDot(
+              t(`scopeOfServices.serviceDetails.${selectedService}.title`)
+            );
+          })()}
         >
-          {selectedService === "emergingAssociations" ? (
+          {(selectedService === "emergingAssociations" ||
+            selectedService === "midSizedAssociations" ||
+            selectedService === "largeAssociations" ||
+            selectedService === "projectsDivision") && (
             <div className="emerging-table-wrap">
               <table className="emerging-table" role="table">
                 <thead>
@@ -292,11 +328,16 @@ const ScopeOfServices = () => {
                 </thead>
                 <tbody>
                   {(function () {
-                    // try to read structured items from translations first
-                    const translated = t(
-                      "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.items",
-                      { returnObjects: true }
-                    );
+                    // choose translation key depending on which institutional service
+                    const key =
+                      selectedService === "emergingAssociations"
+                        ? "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.items"
+                        : selectedService === "midSizedAssociations"
+                        ? "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ.items"
+                        : selectedService === "largeAssociations"
+                        ? "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى.items"
+                        : "scopeOfServices.serviceDetails.projectsDivision.items";
+                    const translated = t(key, { returnObjects: true });
                     let items = [];
                     if (Array.isArray(translated) && translated.length > 0) {
                       items = translated;
@@ -317,11 +358,15 @@ const ScopeOfServices = () => {
                 </tbody>
               </table>
             </div>
-          ) : (
+          )}
+          {selectedService &&
+            selectedService !== "emergingAssociations" &&
+            selectedService !== "midSizedAssociations" &&
+            selectedService !== "largeAssociations" &&
+            selectedService !== "projectsDivision" &&
             renderDescription(
               t(`scopeOfServices.serviceDetails.${selectedService}.description`)
-            )
-          )}
+            )}
         </ServiceModal>
       )}
     </section>

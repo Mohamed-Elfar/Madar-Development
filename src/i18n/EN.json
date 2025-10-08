@@ -130,30 +130,44 @@
   },
   "privacyPolicy": {
     "privacyPolicy": "Privacy Policy",
-    "title": "Privacy Policy & Intellectual Property Notice",
     "policy": "Privacy Policy",
-    "intro": "At ConsulRain Company, we are committed to safeguarding the privacy of our website visitors and clients. This policy outlines our practices regarding the collection, utilization, and protection of your personal information.",
-    "infoCollection": "Information Collection",
-    "infoCollectionDesc": "We may collect personal data, including your name and email address, when you interact with our website. This information is primarily utilized to enhance the user experience, respond to inquiries, and optimize our services.",
-    "dataUtilization": "Data Utilization",
-    "dataUtilizationDesc": "Your personal information will not be disseminated, shared, or disclosed to third parties except in accordance with legal requirements or with your explicit consent.",
-    "cookies": "Cookies",
-    "cookiesDesc": "Our website may employ cookies to enhance functionality and user experience. If you prefer not to share this data, you may disable cookies through your browser settings.",
-    "dataSecurity": "Data Security",
-    "dataSecurityDesc": "We implement industry-standard security protocols to safeguard your information from unauthorized access, modification, or disclosure.",
-    "ipNotice": "Intellectual Property Notice",
-    "ipNoticeDesc": "All content on this website, including text, graphics, logos, icons, images, and design elements, is the exclusive property of ConsulRain Company. This content is protected under applicable copyright, trademark, and intellectual property laws.",
-    "prohibitedUse": "Prohibited Use",
-    "prohibitedUseList": [
-      "You are strictly prohibited from copying, quoting, reproducing, distributing, or using any part of this website’s content, logo, or branding materials without prior written authorization from ConsulRain Company.",
-      "Unauthorized use of our intellectual property may result in legal action."
-    ],
+    "title": "Privacy Policy, Intellectual Property Notice & Legal Disclaimer",
+    "effectiveDate": "Effective date: October 8, 2025",
+    "intro": "MADAR DEVELOPMENT, the Company is committed to protecting the privacy of visitors to our website and our clients. This policy explains how we collect, use, and protect personal information when you interact with our site.",
+    "informationCollection": "Information collection",
+    "informationCollectionDesc": "We may collect personal information that you voluntarily provide (for example your name, email address, phone number, and message) when you contact us, submit a form, or register for services. We also collect non-identifying technical data (such as IP address, browser type, and usage data) to help maintain and improve the website.",
+    "infoCollection": "Information collection",
+    "infoCollectionDesc": "We may collect personal information that you voluntarily provide (for example your name, email address, phone number, and message) when you contact us, submit a form, or register for services. We also collect non-identifying technical data (such as IP address, browser type, and usage data) to help maintain and improve the website.",
+    "useOfInformation": "Use of information",
+    "useOfInformationDesc": "We use personal information to respond to inquiries, provide and improve our services, send transactional or service-related messages, and for internal business purposes such as analytics and security. We will not sell your personal information to third parties.",
+    "dataUtilization": "Use of information",
+    "dataUtilizationDesc": "We use personal information to respond to inquiries, provide and improve our services, send transactional or service-related messages, and for internal business purposes such as analytics and security. We will not sell your personal information to third parties.",
+    "cookies": "Cookies and tracking technologies",
+    "cookiesDesc": "We use cookies and similar technologies to enhance site functionality, analyze usage, and deliver a better user experience. You can control cookie preferences through your browser settings; disabling cookies may limit some features of the site.",
+    "dataSecurity": "Data security and retention",
+    "dataSecurityDesc": "We implement industry-standard measures to protect information from unauthorized access, alteration, disclosure, or destruction. We retain personal data only as long as necessary for the purposes described (or as required by law).",
+    "sharing": "Sharing and disclosures",
+    "sharingDesc": "We only share personal data with service providers and partners who need the information to perform services on our behalf and who are contractually bound to protect it. We may disclose information if required by law or to protect the rights, property, or safety of MADAR DEVELOPMENT and its users.",
+    "yourRights": "Your rights and choices",
+    "yourRightsDesc": "Depending on your jurisdiction, you may have rights to access, correct, or delete personal information we hold about you. To exercise those rights or for questions about your data, contact us at the details below.",
+    "contactTitle": "Contact",
+    "contactEmail": "info@madar.dev",
+    "contactPhone": "+966 540 478 767",
+    "contactAddress": "Riyadh, Saudi Arabia",
     "requestPermission": "Request for Permission",
     "requestPermissionDesc": "To request permission for use of any content or branding, please contact us at:",
+    "email": "info@madar.dev",
+    "phone": "+966540478767",
+    "ipNotice": "Intellectual Property Notice",
+    "ipNoticeDesc": "All content on this website — including text, graphics, logos, icons, images, and design elements — is the property of MADAR DEVELOPMENT or its licensors and is protected by copyright, trademark, and other intellectual property laws. Unauthorized copying, reproduction, distribution, or use is prohibited.",
+    "prohibitedUse": "Prohibited use and permissions",
+    "prohibitedUseDesc": "You may not reproduce, republish, distribute, or commercialize any content from this site without prior written permission from MADAR DEVELOPMENT. Unauthorized use may result in legal action. To request permission, contact us at info@madar.dev or +966 540 478 767.",
+    "prohibitedUseList": [
+      "You may not reproduce, republish, distribute, or commercialize any content from this site without prior written permission from MADAR DEVELOPMENT.",
+      "Unauthorized use may result in legal action."
+    ],
     "legalDisclaimer": "Legal Disclaimer",
-    "legalDisclaimerDesc": "By accessing this website, you acknowledge and agree to comply with all terms and conditions outlined in this policy. ConsulRain Company retains the authority to update or modify this policy at any time, without prior notice.",
-    "email": "info@consulrain.com",
-    "phone": "+966540478767"
+    "legalDisclaimerDesc": "By accessing or using this site you agree to comply with these terms. MADAR DEVELOPMENT may update or modify this policy at any time; changes are effective when posted on the website. Continued use of the site after updates constitutes acceptance of the revised policy."
   },
   "footer": {
     "contactUs": "Contact Us",
@@ -595,9 +609,85 @@
           }
         ]
       },
+      "ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ": {
+        "title": "Services for Mid-sized Associations",
+        "description": "Services tailored for mid-sized associations including financial audits, policy reviews, sustainability programs, and governance improvements.",
+        "items": [
+          {
+            "title": "Financial audit & smart financial management review",
+            "price": "12000"
+          },
+          {
+            "title": "Review and development of policies, procedures, strategic & operational plans, resource mobilization and full reporting and monitoring systems, with an institutional analysis report",
+            "price": "5000"
+          },
+          {
+            "title": "Set up a financial sustainability management (4 months)",
+            "price": "6000"
+          },
+          {
+            "title": "Governance enhancement and policy compliance improvement",
+            "price": "7000 : 3000 depending on association condition & analysis"
+          }
+        ]
+      },
+      "ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى": {
+        "title": "Services for Large Associations",
+        "description": "Advanced services for large associations including ISO certification support, environment setup, sustainability planning, advanced training, and document revision.",
+        "items": [
+          {
+            "title": "ISO 9001 certification for comprehensive quality",
+            "price": "7500"
+          },
+          {
+            "title": "Prepare and develop administrative, technical and financial work environment",
+            "price": "6000"
+          },
+          { "title": "Design financial sustainability plans", "price": "6000" },
+          {
+            "title": "Advanced training in financial & institutional management, developmental investment and social innovation (per course)",
+            "price": "500 per course"
+          },
+          {
+            "title": "Review and update all financial, administrative and technical documents for the last 3 years with monitoring & evaluation report",
+            "price": "5500"
+          },
+          {
+            "title": "Establish and activate community marketing management and operate it for 6 months",
+            "price": "8000"
+          },
+          {
+            "title": "Prepare technical and financial proposals for government contracting competitions",
+            "price": "1000"
+          }
+        ]
+      },
       "projectsDivision": {
         "title": "Projects Division Services",
-        "description": "Services focused on project management, feasibility, and delivery support for large-scale initiatives."
+        "items": [
+          {
+            "title": "Write and design project proposals for donors",
+            "price": "1500"
+          },
+          {
+            "title": "Project management and execution over the project duration",
+            "price": "depends on project value & duration"
+          },
+          { "title": "Monitoring & evaluation for projects", "price": "2500" },
+          { "title": "Prepare project closure report", "price": "2500" },
+          {
+            "title": "Create and operate project management units inside the association for one year (for 3 staff)",
+            "price": "45000"
+          },
+          {
+            "title": "Design continuity plans for projects after grant end, fundraising & marketing campaigns",
+            "price": "2500"
+          },
+          {
+            "title": "Training: preparing, managing and monitoring PMD = project evaluation and developmental projects",
+            "price": "1150"
+          }
+        ]
       },
       "supplyChain": {
         "title": "Supply Chain & Logistics",
