@@ -4,11 +4,16 @@ import TrainingProcessSection from "../../components/training/TrainingProcessSec
 import TrainingBusinessLines from "../../components/TrainingBusinessLines/TrainingBusinessLines";
 import ScopeOfServices from "../../components/ScopeOfServices/ScopeOfServices";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
+
 export default function TrainingPage() {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Training | ConsulRain</title>
+        <title>
+          {t("training.heroSection.title", "Training")} | {t("brandName")}
+        </title>
         <meta
           name="description"
           content="Discover ConsulRain's training programs, business lines, and our process for empowering your team."

@@ -3,9 +3,14 @@ import { Helmet } from "react-helmet-async";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import "./InstitutionalDevelopment.css";
 import { useTranslation } from "react-i18next";
+import SubscribeModal from "../../components/SubscribeModal/SubscribeModal";
+import { useState } from "react";
 
 export default function InstitutionalDevelopment() {
   const { t } = useTranslation();
+  const [subscribeOpen, setSubscribeOpen] = useState(false);
+  const [availableServices, setAvailableServices] = useState([]);
+  const [modalTitle, setModalTitle] = useState("");
 
   return (
     <>
@@ -97,12 +102,35 @@ export default function InstitutionalDevelopment() {
                       </tbody>
                     </table>
                   </div>
+                  <div className="mt-4 text-center">
+                    <button
+                      className="bg-primary-500 text-white py-2 px-4 rounded-md"
+                      onClick={() => {
+                        // prepare service options from items
+                        const svcOptions = (isArray ? items : []).map((it) => ({
+                          title: it.title,
+                          price: it.price,
+                        }));
+                        setAvailableServices(svcOptions);
+                        setModalTitle(tbl.title);
+                        setSubscribeOpen(true);
+                      }}
+                    >
+                      {t("register.subscribeButton", "Subscribe to a service")}
+                    </button>
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
       </section>
+      <SubscribeModal
+        isOpen={subscribeOpen}
+        onClose={() => setSubscribeOpen(false)}
+        services={availableServices}
+        title={modalTitle}
+      />
     </>
   );
 }

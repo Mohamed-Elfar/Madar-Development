@@ -180,6 +180,7 @@ html[lang="ar"] .footer-li:hover {
   }
   .hero_subtitle {
     text-align: center !important;
+    font-size: 21px;
   }
 }
 

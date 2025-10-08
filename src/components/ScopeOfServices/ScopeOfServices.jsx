@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 // removed FontAwesome usage - using simple entity icons instead
 import Illustration from "/images/institutional-illustration-2.svg";
 import ServiceModal from "../ServiceModal/ServiceModal"; // Import the modal
+import SubscribeModal from "../SubscribeModal/SubscribeModal";
 import "./ScopeOfServices.css"; // Import the new CSS
 
 const ScopeOfServices = () => {
@@ -10,6 +11,8 @@ const ScopeOfServices = () => {
   const isRtl = i18n.dir() === "rtl";
   const [selectedService, setSelectedService] = useState(null);
   const [modalTitle, setModalTitle] = useState(null);
+  const [subscribeOpen, setSubscribeOpen] = useState(false);
+  const [availableServices, setAvailableServices] = useState([]);
 
   const ensureDot = (text) => {
     if (!text && text !== "") return text;
@@ -25,6 +28,31 @@ const ScopeOfServices = () => {
 
   const handleCloseModal = () => {
     setSelectedService(null);
+  };
+
+  const handleSubscribe = (serviceKey) => {
+    // prepare items for the subscribe modal based on selected serviceKey
+    const keyMap = {
+      emergingAssociations:
+        "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.items",
+      midSizedAssociations:
+        "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ.items",
+      largeAssociations:
+        "scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى.items",
+    };
+    const items = t(keyMap[serviceKey], { returnObjects: true });
+    const svcOptions = Array.isArray(items)
+      ? items.map((it) => ({ title: it.title || it, price: it.price || "" }))
+      : [];
+    setAvailableServices(svcOptions);
+    setModalTitle(
+      serviceKey === "emergingAssociations"
+        ? t("scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ.title")
+        : serviceKey === "midSizedAssociations"
+        ? t("scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻤﺘﻮﺳﻄﺔ.title")
+        : t("scopeOfServices.serviceDetails.ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻜﺒﺮى.title")
+    );
+    setSubscribeOpen(true);
   };
 
   const renderDescription = (description) => {
@@ -313,6 +341,7 @@ const ScopeOfServices = () => {
               t(`scopeOfServices.serviceDetails.${selectedService}.title`)
             );
           })()}
+          onSubscribe={() => handleSubscribe(selectedService)}
         >
           {(selectedService === "emergingAssociations" ||
             selectedService === "midSizedAssociations" ||
@@ -369,6 +398,14 @@ const ScopeOfServices = () => {
             )}
         </ServiceModal>
       )}
+
+      {/* Subscribe modal instance used by ServiceModal's Subscribe button */}
+      <SubscribeModal
+        isOpen={subscribeOpen}
+        onClose={() => setSubscribeOpen(false)}
+        services={availableServices}
+        title={modalTitle}
+      />
     </section>
   );
 };

@@ -118,6 +118,7 @@
     "agreeToTerms": "I agree to the",
     "termsAndConditions": "terms and conditions",
     "joinUsButton": "Join Us",
+    "subscribeButton": "Subscribe to a service",
     "submitting": "Submitting...",
     "phone": "Phone",
     "name": "Name",
@@ -199,8 +200,8 @@
     }
   },
   "hero": {
-    "title": "Turning Vision into Reality, Strategically",
-    "subtitle": "ConsulRain drives business growth through expert consulting and targeted training in management, finance, and operations.",
+    "title": "Building sustainable growth, strategically",
+    "subtitle": "MADAR DEVELOPMENT partners with organizations to transform strategy into measurable results through focused consulting and practical training in operations, finance, and leadership.",
     "cta": "Learning Journeys",
     "alt": {
       "person1": "A smiling man in a suit",

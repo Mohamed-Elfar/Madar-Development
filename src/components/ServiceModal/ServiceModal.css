@@ -88,7 +88,7 @@
   color: #4a8b8b; 
   font-weight: bold;
 } */
-html[lang="ar"] .service-modal-body  {
+html[lang="ar"] .service-modal-body {
   direction: rtl;
   text-align: right;
 }
@@ -103,6 +103,28 @@ html[lang="ar"] .service-modal-body  {
   color: #374151;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.service-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 1rem;
+}
+
+.service-modal-subscribe-btn {
+  background: var(--color-primary-500, #189748);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(24, 151, 72, 0.12);
+}
+.service-modal-subscribe-btn:hover {
+  opacity: 0.95;
 }
 
 @keyframes fadeIn {

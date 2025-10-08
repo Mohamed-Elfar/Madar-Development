@@ -8,6 +8,7 @@ import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,
   EMAILJS_USER_ID,
+  EMAILJS_TO_EMAIL,
 } from "../../emailjsConfig";
 import headerBg from "../../assets/contact-header-bg.webp";
 // social icons are provided by SocialFooter
@@ -57,6 +58,8 @@ export default function ContactUs() {
     const emailBody = createEmailTemplate(templateParams);
 
     const finalTemplateParams = { ...templateParams, html_message: emailBody };
+    // include explicit recipient in case template expects a dynamic to_email variable
+    finalTemplateParams.to_email = EMAILJS_TO_EMAIL;
 
     emailjs
       .send(

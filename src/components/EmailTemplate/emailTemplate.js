@@ -95,7 +95,7 @@ export const createEmailTemplate = (formData) => {
     <body>
       <div class="container">
         <div class="header">
-          <img src="https://your-live-website.com/images/spinnerLogo.png" alt="ConsulRain Logo">
+          <img src="https://your-live-website.com/images/logo.png" alt="Madar Development Logo">
         </div>
         <div class="content">
           <h1>New ${formType || "Form"} Submission</h1>
@@ -107,8 +107,8 @@ export const createEmailTemplate = (formData) => {
           </table>
         </div>
         <div class="footer">
-          <p>&copy; ${new Date().getFullYear()} ConsulRain. All Rights Reserved.</p>
-          <p><a href="https://consulrain.com">Visit our website</a></p>
+          <p>&copy; ${new Date().getFullYear()} Madar Development. All Rights Reserved.</p>
+          <p><a href="https://madardevelopment.com">Visit our website</a></p>
         </div>
       </div>
     </body>

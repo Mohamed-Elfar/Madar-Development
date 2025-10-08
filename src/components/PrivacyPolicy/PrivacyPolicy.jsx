@@ -10,7 +10,9 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | ConsulRain</title>
+        <title>
+          {t("privacyPolicy.title", "Privacy Policy")} | {t("brandName")}
+        </title>
         <meta
           name="description"
           content="Read ConsulRain's privacy policy to learn how we protect your data and respect your privacy."

@@ -15,7 +15,7 @@ export default function TrainingIntroSection() {
         {/* RIGHT: two stacked images */}
         <div className="training-right grid grid-rows-2 gap-4">
           <img
-            src="/public/images/training-heroimage1.webp"
+            src="/images/training-heroimage1.webp"
             alt="training hero 1"
             className="training-img rounded-lg"
           />

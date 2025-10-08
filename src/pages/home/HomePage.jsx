@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 const HeroSection = lazy(() =>
   import("../../components/homeComponents/HeroSection")
 );
@@ -24,10 +25,13 @@ const OurPartners = lazy(() =>
 );
 
 export default function HomePage() {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>ConsulRain | Home</title>
+        <title>
+          {t("home.pageTitle", "Home")} | {t("brandName")}
+        </title>
         <meta
           name="description"
           content="ConsulRain drives business growth through expert consulting and targeted training in management, finance, and operations."
@@ -41,8 +45,8 @@ export default function HomePage() {
           <StatsSection />
           <EmpowerSection />
           <Services />
-          <Founders />
-          <OurPartners />
+          {/* <Founders />
+          <OurPartners /> */}
         </div>
       </Suspense>
     </>

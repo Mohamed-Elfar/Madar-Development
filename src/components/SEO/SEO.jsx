@@ -72,7 +72,7 @@ const SEO = ({
           description: description,
           contactPoint: {
             "@type": "ContactPoint",
-            email: "info@madar-development.com",
+            email: "info@madardevelopment.com",
             contactType: "Customer Service",
           },
           sameAs: [

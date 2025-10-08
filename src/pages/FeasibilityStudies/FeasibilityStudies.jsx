@@ -74,7 +74,9 @@ export default function FeasibilityStudies() {
   return (
     <>
       <Helmet>
-        <title>Feasibility Studies | ConsulRain</title>
+        <title>
+          {t("feasibility.title", "Feasibility Studies")} | {t("brandName")}
+        </title>
         <meta
           name="description"
           content="Explore our comprehensive feasibility studies for market, technical, financial, legal, and organizational analysis."
