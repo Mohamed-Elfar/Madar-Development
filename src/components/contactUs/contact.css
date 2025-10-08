@@ -1,0 +1,179 @@
+.location-flip-card {
+  perspective: 1000px;
+  min-height: 140px !important;
+}
+.location-flip-inner {
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.location-flip-inner.rotate {
+  transform: rotateY(180deg);
+}
+.location-flip-front,
+.location-flip-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.location-flip-back {
+  transform: rotateY(180deg);
+}
+
+/* Contact page layout and form styles */
+.contact-us-section {
+  margin: 80px 0 0 0 !important;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+.icon-square {
+  width: 54px;
+  height: 54px;
+  background: var(--color-brand-green, #189748);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.contact-item-title {
+  font-weight: 700;
+}
+.contact-item-sub {
+  color: #6b7280; /* gray-500 */
+  font-size: 0.95rem;
+}
+
+/* Social icons row under contact list */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.social-icons a img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.06));
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.social-icons a:hover img {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+/* compact variant used in contact page */
+.social-icons.compact {
+  gap: 10px;
+}
+.social-icons.compact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--color-brand-green, #189748);
+  transition: background-color 0.12s ease, transform 0.12s ease;
+}
+.social-icons.compact a i {
+  font-size: 18px; /* base icon size */
+  color: #fff; /* icons white */
+  transition: transform 0.12s ease, color 0.12s ease;
+}
+.social-icons.compact a:hover {
+  transform: translateY(-3px);
+  background: var(--color-brand-green-600, #0f6b3c);
+}
+
+.meta-desc {
+  font-size: 1rem;
+  color: #374151; /* gray-700 */
+}
+
+.message-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  /* stronger, more modern shadow */
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+.input-box {
+  width: 100%;
+  border: 1px solid #e6e9ee;
+  background: #f6f7f8;
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #111827;
+}
+.input-box:focus {
+  outline: none;
+  border-color: var(--color-brand-green, #189748);
+  box-shadow: 0 0 0 3px rgba(24, 151, 72, 0.08);
+}
+.submit-btn {
+  width: 100%;
+  padding: 12px 18px;
+  background: var(--color-brand-green, #189748);
+  color: white;
+  border-radius: 6px;
+  font-weight: 700;
+  border: none;
+  margin-top: 6px;
+}
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Full-bleed map */
+.full-bleed-map {
+  /* RTL-safe full-bleed: pull the element out to viewport edges without using 100vw translate
+     This avoids horizontal scroll issues when scrollbars or RTL direction are present. */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* visibleMeta removed per user request */
+.full-bleed-map iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .full-bleed-map {
+    height: 300px;
+  }
+}
+
+/* phone link styling */
+.contact-phone-link {
+  color: #6B7280;
+  text-decoration: none;
+}
+.contact-phone-link:hover {
+  color: black;
+  text-decoration: none;
+}

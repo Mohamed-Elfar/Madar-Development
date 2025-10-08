@@ -1,0 +1,4 @@
+html[lang="ar"] .phone-input::placeholder {
+  text-align: right;
+  direction: rtl;
+}

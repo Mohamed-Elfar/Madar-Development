@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simple brand-colored illustrative SVG (made to replace the office cuate image) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Office illustration in MADAR green">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E8F7EE" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#189748" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#57C07A" stop-opacity="0.92" />
+    </linearGradient>
+    <style>
+      .brand { fill: #189748; }
+      .brand-soft { fill: url(#g1); }
+      .brand-gradient { fill: url(#g2); }
+      .desk { fill: #F8FAFB; stroke: rgba(0,0,0,0.04); stroke-width: 1; }
+      .monitor { fill: #FFFFFF; stroke: rgba(0,0,0,0.06); stroke-width: 1; }
+      .accent { fill: #057A45; }
+    </style>
+  </defs>
+
+  <!-- background panel -->
+  <rect x="0" y="0" width="1200" height="800" class="brand-soft" />
+
+  <!-- subtle brand gradient circle -->
+  <circle cx="960" cy="120" r="140" class="brand-gradient" opacity="0.12" />
+
+  <!-- desk -->
+  <rect x="120" y="460" width="960" height="220" rx="12" class="desk" />
+
+  <!-- monitor -->
+  <rect x="300" y="250" width="380" height="200" rx="10" class="monitor" />
+  <rect x="360" y="310" width="260" height="100" rx="6" class="brand-soft" />
+  <rect x="440" y="420" width="120" height="10" rx="2" class="monitor" />
+
+  <!-- laptop -->
+  <g transform="translate(720,330)">
+    <rect x="0" y="40" width="260" height="120" rx="8" class="monitor" />
+    <rect x="12" y="52" width="236" height="84" rx="6" class="brand-soft" />
+    <rect x="0" y="24" width="260" height="16" rx="6" class="brand-gradient" />
+  </g>
+
+  <!-- plant -->
+  <g transform="translate(240,360)">
+    <ellipse cx="0" cy="70" rx="36" ry="14" fill="#DFF7E9" />
+    <rect x="-6" y="30" width="12" height="56" rx="6" fill="#8ED6A2" />
+    <path d="M-6,42 C-40,18 40,6 6,42" fill="#189748" opacity="0.96" />
+    <path d="M-2,30 C-28,6 28,-8 2,28" fill="#57C07A" opacity="0.9" />
+  </g>
+
+  <!-- text/logo placeholder -->
+  <g transform="translate(60,90)">
+    <rect x="0" y="0" width="300" height="72" rx="8" class="brand-gradient" />
+    <text x="20" y="46" font-family="Inter, Arial, sans-serif" font-size="28" fill="#fff">MADAR DEVELOPMENT</text>
+  </g>
+
+  <!-- small decorative shapes -->
+  <circle cx="160" cy="120" r="6" class="brand" opacity="0.9" />
+  <circle cx="200" cy="140" r="4" class="brand" opacity="0.6" />
+
+</svg>

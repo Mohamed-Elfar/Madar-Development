@@ -1,0 +1,197 @@
+/* Read More Card & Modal Styles */
+.feasibility-intro-card {
+  background: #f7faff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+  padding: 1.5rem 1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+.feasibility-desc-short {
+  font-size: 1.1rem;
+  color: #3a506b;
+  margin-bottom: 1rem;
+}
+.feasibility-readmore-btn {
+  background: #1a365d;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.feasibility-readmore-btn:hover {
+  background: #274472;
+}
+.feasibility-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 100vh;
+  background: rgba(26, 54, 93, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.feasibility-modal {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(26, 54, 93, 0.16);
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 600px;
+  width: 90vw;
+  text-align: center;
+  position: relative;
+}
+.feasibility-modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+.feasibility-modal-desc {
+  font-size: 1.15rem;
+  color: #3a506b;
+  margin-bottom: 2rem;
+}
+.feasibility-modal-close {
+  background: #1a365d;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.feasibility-modal-close:hover {
+  background: #274472;
+}
+/* Accordion styles */
+.feasibility-accordion {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  background: #e0eafc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+}
+.feasibility-accordion-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a365d;
+  user-select: none;
+}
+.feasibility-accordion-title {
+  flex: 1;
+}
+.feasibility-accordion-arrow {
+  font-size: 1.5rem;
+  color: #1a365d;
+  transition: transform 0.3s;
+}
+.feasibility-accordion-arrow.open {
+  transform: rotate(180deg);
+}
+.feasibility-accordion-panel {
+  padding: 0 1rem;
+  background: #f7faff;
+  border-radius: 0 0 1rem 1rem;
+}
+.feasibility-accordion-panel.open {
+  padding: 1rem;
+}
+.feasibility-hero {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feasibility-hero-content {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.feasibility-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.feasibility-desc {
+  font-size: 1.2rem;
+  color: #3a506b;
+  margin-bottom: 2rem;
+}
+.feasibility-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.feasibility-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
+  padding: 2rem 1.5rem;
+  width: 320px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.7s ease both;
+}
+.feasibility-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(26, 54, 93, 0.16);
+}
+.feasibility-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.feasibility-card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a365d;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+/* Card list alignment for EN/AR */
+.feasibility-card-list {
+  list-style: disc inside;
+  color: #3a506b;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 0;
+}
+html[dir="rtl"] .feasibility-card-list {
+  text-align: right;
+  direction: rtl;
+  padding-right: 0;
+  padding-left: 0;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeInUp 1s ease both;
+}
+.animate-card {
+  animation: fadeInUp 0.7s ease both;
+}

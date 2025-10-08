@@ -1,0 +1,650 @@
+@media (max-width: 1024px) {
+  .consultation-intro-right {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .consultation-intro-imgbox {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+    height: 340px;
+  }
+  .consultation-contact-dark-content {
+    gap: 1.2rem;
+  }
+  .consultation-contact-form-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .consultation-contact-dark-title {
+    width: 90% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .consultation-intro-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .consultation-intro-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .consultation-feature-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .consultation-intro-right {
+    width: 100%;
+    min-width: unset;
+    justify-content: flex-start;
+  }
+  .consultation-intro-imgbox {
+    max-width: 100%;
+    min-width: unset;
+    height: 320px;
+  }
+  .consultation-intro-img-overlay {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    align-items: flex-start;
+  }
+  .consultation-intro-experience-divider {
+    display: none;
+  }
+  .consultation-contact-dark-content {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .consultation-contact-form-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .consultation-intro-img-overlay {
+    flex-direction: column !important;
+  }
+  .consultation-contact-dark-title {
+    text-align: center;
+    font-size: 2rem !important;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    width: 70% !important;
+    margin: auto;
+  }
+}
+/* Two-column intro/features section */
+
+.consultation-intro-features-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.consultation-intro-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.consultation-intro-left {
+  flex: 2;
+  min-width: 320px;
+}
+.consultation-intro-highlight {
+  color: #189748;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.consultation-intro-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.consultation-intro-desc {
+  font-size: 1.15rem;
+  color: #274472;
+  margin-bottom: 2rem;
+}
+.consultation-feature-list {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.consultation-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #e0eafc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+  padding: 1.2rem 1rem;
+  min-width: 220px;
+  flex: 1;
+}
+.consultation-feature-icon {
+  font-size: 2.2rem;
+  color: #189748;
+  margin-top: 0.2rem;
+}
+.consultation-feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 0.3rem;
+}
+.consultation-feature-desc {
+  font-size: 0.98rem;
+  color: #274472;
+}
+.consultation-intro-right {
+  flex: 2;
+  min-width: 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.consultation-intro-imgbox {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 440px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
+}
+.consultation-intro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(10%) brightness(0.9);
+}
+
+.consultation-intro-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #189748;
+  color: #fff;
+  padding: 1rem 2rem 1.5rem 2rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.consultation-intro-experience {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.consultation-intro-years {
+  font-size: 3rem;
+  margin: auto;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+.consultation-intro-years-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  margin: auto;
+  padding-left: 10px;
+}
+.consultation-intro-experience-divider {
+  width: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0 2rem;
+  border-radius: 2px;
+}
+.consultation-intro-experience-list {
+  flex: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.consultation-intro-experience-list li {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.consultation-intro-experience-list svg {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* Dark contact section with form and info */
+.consultation-contact-dark-wrapper {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--color-brand-green-900, #082e1a) 0%,
+    var(--color-brand-green-800, #0c4426) 100%
+  );
+  color: var(--color-text-inverse, #fff);
+  padding: 3rem 1rem 3rem 1rem;
+  margin-top: 0;
+}
+.consultation-contact-dark-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 800;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  color: var(--color-brand-green-50, #ecf9f3);
+}
+.consultation-contact-dark-highlight {
+  color: var(--color-brand-green-300, #95e0b6);
+}
+.consultation-contact-dark-highlight {
+  color: var(--color-accent-bright, #00e686);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Make the hero title highlighted word more visible */
+.consultation-hero-title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.consultation-hero-title .consultation-contact-dark-highlight {
+  color: #000;
+}
+.consultation-contact-dark-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.consultation-contact-form {
+  flex: 2;
+  margin: auto;
+  min-width: 320px;
+  background: var(--color-brand-green-800, #0c4426);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 30px rgba(6, 40, 20, 0.35),
+    0 2px 10px rgba(15, 80, 40, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.consultation-contact-form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.consultation-contact-form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.consultation-contact-form-group-full {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.consultation-contact-form input,
+.consultation-contact-form select,
+.consultation-contact-form textarea {
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--color-border-medium, #cbd5e1);
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.consultation-contact-form input::placeholder,
+.consultation-contact-form textarea::placeholder {
+  color: #6b7280;
+}
+.consultation-contact-form-btn {
+  background: var(
+    --gradient-primary-green,
+    linear-gradient(90deg, #66d397 0%, #189748 100%)
+  );
+  color: var(--color-text-inverse, #fff);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.12s;
+}
+.consultation-contact-form-btn:hover {
+  background: var(--color-brand-green-600, #15783e);
+  transform: translateY(-1px);
+}
+.consultation-contact-info {
+  flex: 1;
+  min-width: 260px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #fff;
+}
+.consultation-contact-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.consultation-contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.consultation-contact-info li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+/* Sectioned Redesign Below Hero */
+.consultation-sectioned-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.consultation-intro-section {
+  background: #f7faff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.consultation-intro-text {
+  font-size: 1.25rem;
+  color: #274472;
+  margin: 0;
+}
+.consultation-services-scroll {
+  margin-top: 1rem;
+}
+.consultation-services-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.consultation-services-cards-scroll {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.consultation-service-card {
+  min-width: 200px;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.7s ease both;
+}
+.consultation-service-icon {
+  font-size: 2rem;
+  color: #1a365d;
+  margin-bottom: 0.7rem;
+}
+.consultation-service-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #274472;
+  text-align: center;
+}
+.consultation-contact-cta-card {
+  background: #e0eafc;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 2rem auto 0 auto;
+}
+.consultation-contact-cta-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+.consultation-contact-cta-card p {
+  font-size: 1rem;
+  color: #274472;
+  margin-bottom: 1.2rem;
+}
+.consultation-contact-btn {
+  background: #1a365d;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.consultation-contact-btn:hover {
+  background: #274472;
+}
+/* Hero Image Section for Consultation */
+
+.consultation-hero-img-section {
+  width: 100%;
+  position: relative;
+  min-height: 340px;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.consultation-hero-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.consultation-hero-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  filter: grayscale(10%) brightness(0.7);
+}
+.consultation-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  background-color: var(--color-brand-green, #27904f);
+  opacity: 0.55; /* semi-transparent brand overlay */
+  z-index: 2;
+}
+.consultation-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+.consultation-hero-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(26, 54, 93, 0.18);
+}
+
+/* Modern Consultation Page Redesign */
+.consultation-modern-wrapper {
+  background: linear-gradient(120deg, #f7fafc 0%, #e0eafc 100%);
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.consultation-modern-hero {
+  max-width: 900px;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+.consultation-modern-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.consultation-modern-desc {
+  font-size: 1.25rem;
+  color: #274472;
+  margin-bottom: 1.5rem;
+}
+.consultation-modern-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.consultation-modern-services {
+  flex: 2;
+}
+.consultation-modern-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1.2rem;
+}
+.consultation-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.consultation-modern-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
+  padding: 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.7s ease both;
+}
+.consultation-modern-icon {
+  font-size: 2.2rem;
+  color: #1a365d;
+  margin-bottom: 0.7rem;
+}
+.consultation-modern-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #274472;
+  text-align: center;
+}
+.consultation-modern-cta {
+  flex: 1;
+  background: #e0eafc;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 260px;
+  max-width: 350px;
+  margin-top: 1.5rem;
+}
+.consultation-modern-cta h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+.consultation-modern-cta p {
+  font-size: 1rem;
+  color: #274472;
+  margin-bottom: 1.2rem;
+}
+.consultation-modern-contact-btn {
+  background: #1a365d;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.consultation-modern-contact-btn:hover {
+  background: #274472;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

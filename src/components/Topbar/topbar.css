@@ -1,0 +1,26 @@
+/* Shared social button styles (used in topbar and footer) */
+.social-btn {
+  background: #fff; /* white bg */
+  color: var(--color-primary-500, #189748); /* icon color */
+  width: 2rem; /* 8 */
+  height: 2rem; /* 8 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* full */
+  transition: background-color 0.12s ease, color 0.12s ease,
+    transform 0.12s ease;
+}
+.social-btn i {
+  color: currentColor; /* inherit icon color */
+  font-size: 1rem; /* text-lg equivalent */
+}
+.social-btn:hover {
+  background: var(--color-primary-700, #115e32); /* darker green */
+  color: #fff; /* icon becomes white */
+  transform: translateY(-2px);
+}
+
+.topbar a[aria-label] {
+  text-decoration: none;
+}

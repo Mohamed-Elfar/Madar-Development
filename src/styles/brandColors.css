@@ -1,0 +1,175 @@
+/* ConsulRain.ai Brand Color Palette */
+/* CSS Custom Properties for easy use throughout the application */
+
+:root {
+  /* Primary Brand Colors (MADAR) - only green palette kept */
+  --color-brand-green-50: #ecf9f3;
+  --color-brand-green-100: #d7f3e7;
+  --color-brand-green-200: #beebd0;
+  --color-brand-green-300: #95e0b6;
+  --color-brand-green-400: #66d397;
+  --color-brand-green: #189748; /* 500 - primary */
+  --color-brand-green-600: #15783e;
+  --color-brand-green-700: #115e32;
+  --color-brand-green-800: #0c4426;
+  --color-brand-green-900: #082e1a;
+
+  /* Neutral Colors */
+  --color-neutral-charcoal: #2d2d2d;
+  --color-neutral-dark-gray: #404040;
+  --color-neutral-medium-gray: #606060;
+  --color-neutral-light-gray: #808080;
+  --color-neutral-silver: #a0a0a0;
+  --color-neutral-light-silver: #c0c0c0;
+
+  /* Background Colors */
+  --color-bg-primary: #f8fafc;
+  --color-bg-secondary: #f1f5f9;
+  --color-bg-accent: #e2e8f0;
+  --color-bg-dark: #1e293b;
+  --color-bg-card: #ffffff;
+
+  /* Text Colors */
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+  --color-text-inverse: #f8fafc;
+
+  /* Border Colors */
+  --color-border-light: #e2e8f0;
+  --color-border-medium: #cbd5e1;
+  --color-border-dark: #94a3b8;
+
+  /* State Colors */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Accent Colors */
+  --color-accent-warm: #b8860b;
+  --color-accent-warm-light: #daa520;
+
+  /* Gradients */
+  --gradient-primary-green: linear-gradient(135deg, #189748 0%, #115e32 100%);
+  --gradient-subtle-gray: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --gradient-dark: linear-gradient(135deg, #1e293b 0%, #2d2d2d 100%);
+
+  /* Shadows using brand colors */
+  --shadow-brand-green: 0 4px 6px -1px rgba(24, 151, 72, 0.12),
+    0 2px 4px -1px rgba(24, 151, 72, 0.06);
+  --shadow-neutral: 0 4px 6px -1px rgba(45, 45, 45, 0.1),
+    0 2px 4px -1px rgba(45, 45, 45, 0.06);
+}
+
+/* Dark theme variants */
+[data-theme="dark"] {
+  --color-bg-primary: #1e293b;
+  --color-bg-secondary: #334155;
+  --color-bg-accent: #475569;
+  --color-bg-card: #2d2d2d;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-muted: #cbd5e1;
+  --color-text-light: #94a3b8;
+  --color-text-inverse: #1e293b;
+
+  --color-border-light: #475569;
+  --color-border-medium: #64748b;
+  --color-border-dark: #94a3b8;
+}
+
+/* Utility classes for quick use */
+.bg-brand-green {
+  background-color: var(--color-brand-green);
+}
+.bg-brand-green-400 {
+  background-color: var(--color-brand-green-400);
+}
+.bg-brand-green-600 {
+  background-color: var(--color-brand-green-600);
+}
+
+.text-brand-green {
+  color: var(--color-brand-green);
+}
+.text-brand-green-400 {
+  color: var(--color-brand-green-400);
+}
+
+.border-brand-green {
+  border-color: var(--color-brand-green);
+}
+
+/* Component-specific color schemes */
+.brand-header {
+  /* keep header gradient but prefer green gradient if present */
+  background: var(--gradient-primary-green, var(--gradient-primary-blue));
+  color: var(--color-text-inverse);
+}
+
+.brand-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-neutral);
+}
+
+.brand-button-primary {
+  /* primary buttons now use brand green */
+  background: var(--color-brand-green);
+  color: var(--color-text-inverse);
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.brand-button-primary:hover {
+  background: var(--color-brand-green-400);
+}
+
+.brand-button-secondary {
+  background: var(--color-brand-teal);
+  color: var(--color-text-inverse);
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.brand-button-secondary:hover {
+  background: var(--color-brand-teal-dark);
+}
+
+.brand-input {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-medium);
+  color: var(--color-text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.brand-input:focus {
+  border-color: var(--color-brand-green);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 151, 72, 0.12);
+}
+
+/* Gradient backgrounds */
+.gradient-brand-blue {
+  background: var(--gradient-primary-blue);
+}
+
+.gradient-teal-blue {
+  background: var(--gradient-teal-blue);
+}
+
+.gradient-brand-green {
+  background: var(--gradient-primary-green);
+}
+
+.gradient-subtle {
+  background: var(--gradient-subtle-gray);
+}
+
+.gradient-dark {
+  background: var(--gradient-dark);
+}

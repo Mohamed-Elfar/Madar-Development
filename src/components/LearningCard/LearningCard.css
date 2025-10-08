@@ -1,0 +1,13 @@
+/* 3D effect for LearningCard image */
+.three-d-img {
+  box-shadow: 0 8px 32px 0 rgba(30, 41, 59, 0.22), 0 2.5px 0 #1e293b,
+    0 1.5px 8px 0 #32d8cc66 inset;
+  border-radius: 16px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s;
+}
+.three-d-img:hover {
+  transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1.13);
+  box-shadow: 0 16px 48px 0 rgba(30, 41, 59, 0.28), 0 4px 0 #1e293b;
+}
+
+/* transform: perspective(400px) rotateX(18deg) rotateY(-12deg) scale(1.08); */

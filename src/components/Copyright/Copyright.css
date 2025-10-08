@@ -1,0 +1,11 @@
+.copyright-section {
+  background-color: #115e32;
+  color: var(--color-primary-50, #ecf9f3);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.copyright-section p {
+  margin: 0;
+}

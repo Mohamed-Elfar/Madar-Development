@@ -1,0 +1,675 @@
+{
+  "brandTagline": "We grow together .. We excel together",
+  "brandName": "MADAR DEVELOPMENT",
+  "header": {
+    "title": "Learning That Works, Employment That Fits",
+    "learning": "Learning",
+    "forLearners": "For Learners",
+    "embeddedSystems": "Embedded Systems",
+    "softwareTesting": "Software Testing",
+    "mobileDevelopment": "Mobile Development",
+    "webDevelopment": "Web Development",
+    "cloudDevops": "Cloud DevOps",
+    "aiDataScience": "AI & Data Science",
+    "cybersecurity": "Cybersecurity"
+  },
+  "navbar": {
+    "home": "Home",
+    "learning": "Learning",
+    "hireGraduates": "Hire Our Graduates",
+    "partnership": "Sprints X Microsoft",
+    "login": "Login",
+    "joinUs": "Join Us",
+    "about": "About us",
+    "contact": "Contact Us",
+    "training": "Training",
+    "ourServices": "Our Services",
+    "consultation": "Consulting",
+    "feasibilityStudies": "Feasibility Studies"
+  },
+  "home": {
+    "pageTitle": "Welcome to the Home Page"
+  },
+  "empower": {
+    "title": "WHO WE",
+    "highlightedWord": "EMPOWER?",
+    "corporates": {
+      "title": "Corporates & Enterprises",
+      "description": "We collaborate with large organizations to enhance operational excellence, develop talent capabilities, and navigate transformation through bespoke training programs and strategic consultancy.",
+      "buttonText": "Learn More"
+    },
+    "smes": {
+      "title": "SMEs & Family Businesses",
+      "description": "We empower small and mid-sized enterprises to build resilient foundations, streamline operations, and scale confidently, through tailored solutions.",
+      "buttonText": "Explore Solutions"
+    },
+    "government": {
+      "title": "Government & Public Sector",
+      "description": "Partnering with government entities and public institutions, we support the development of human capital, drive performance, and implement forward-looking strategies for sustainable organizational growth.",
+      "buttonText": "Partner With Us"
+    },
+    "industry": {
+      "title": "Industry Leaders & Manufacturing Sectors",
+      "description": "From production to logistics, quality, and supply chain, our technical training and advisory services enable manufacturing departments to optimize performance and uphold the highest industry standards.",
+      "buttonText": "Optimize Now"
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact Us | MADAR DEVELOPMENT",
+    "metaDescription": "Contact MADAR DEVELOPMENT for business inquiries, support, or partnership opportunities.",
+    "header": "Contact Us",
+    "contactTitle": "Madar Development",
+    "contactSubtitle": "Madar Development is an integrated consulting firm offering comprehensive logistics, financial, and management services to non-profits, startups, government and industrial organizations. Founded in September 2025, it is led by a team of expert consultants with over 20 years of experience.",
+    "headOffice": "Head Office",
+    "addressValue": "Riyadh, Saudi Arabia",
+    "tel": "Tel.No",
+    "phoneValue": "+966540478767",
+    "email": "Email",
+    "emailValue": "info@madar.dev",
+    "social": "Social",
+    "socialValue": "@madar",
+    "sendTitle": "Send Us a Message",
+    "formTitle": "Call to Action",
+    "formSubtitle": "Want to see how we can impact your business? Let’s Talk",
+    "namePlaceholder": "Full name",
+    "phonePlaceholder": "Phone",
+    "emailPlaceholder": "Your email",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message",
+    "submitButton": "Send Message",
+    "submitting": "Submitting...",
+    "successMessage": "Your message has been sent successfully!",
+    "successTitle": "Message Sent!",
+    "errorMessageTitle": "Error",
+    "errorMessageText": "Something went wrong. Please try again later.",
+    "locationEgypt": "Egypt Office:",
+    "locationEgyptValue": "Riyadh, Saudi Arabia"
+  },
+  "stats": {
+    "satisfiedUsers": "Satisfied Users",
+    "learningHours": "Learning Hours",
+    "employmentRate": "Employment Rate",
+    "projectSuccessRate": "Project Success Rate",
+    "impactedCountries": "Impacted Countries",
+    "sectionTitle": "Our Impact in Numbers"
+  },
+  "login": {
+    "title": "Log in to your account",
+    "google": "Google",
+    "github": "Github",
+    "linkedin": "LinkedIn",
+    "or": "or",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "joinUs": "Join Us",
+    "close": "Close"
+  },
+  "register": {
+    "title": "Join Us",
+    "errorTitle": "Oops...",
+    "successTitle": "Success!",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "agreeToTerms": "I agree to the",
+    "termsAndConditions": "terms and conditions",
+    "joinUsButton": "Join Us",
+    "submitting": "Submitting...",
+    "phone": "Phone",
+    "name": "Name",
+    "namePlaceholder": "Enter your full name",
+    "phonePlaceholder": "Enter your phone number",
+    "close": "Close",
+    "agreeToTermsError": "Please agree to the terms and conditions",
+    "successMessage": "Registration sent successfully!",
+    "errorMessage": "Failed to send registration. Please try again."
+  },
+  "privacyPolicy": {
+    "privacyPolicy": "Privacy Policy",
+    "title": "Privacy Policy & Intellectual Property Notice",
+    "policy": "Privacy Policy",
+    "intro": "At ConsulRain Company, we are committed to safeguarding the privacy of our website visitors and clients. This policy outlines our practices regarding the collection, utilization, and protection of your personal information.",
+    "infoCollection": "Information Collection",
+    "infoCollectionDesc": "We may collect personal data, including your name and email address, when you interact with our website. This information is primarily utilized to enhance the user experience, respond to inquiries, and optimize our services.",
+    "dataUtilization": "Data Utilization",
+    "dataUtilizationDesc": "Your personal information will not be disseminated, shared, or disclosed to third parties except in accordance with legal requirements or with your explicit consent.",
+    "cookies": "Cookies",
+    "cookiesDesc": "Our website may employ cookies to enhance functionality and user experience. If you prefer not to share this data, you may disable cookies through your browser settings.",
+    "dataSecurity": "Data Security",
+    "dataSecurityDesc": "We implement industry-standard security protocols to safeguard your information from unauthorized access, modification, or disclosure.",
+    "ipNotice": "Intellectual Property Notice",
+    "ipNoticeDesc": "All content on this website, including text, graphics, logos, icons, images, and design elements, is the exclusive property of ConsulRain Company. This content is protected under applicable copyright, trademark, and intellectual property laws.",
+    "prohibitedUse": "Prohibited Use",
+    "prohibitedUseList": [
+      "You are strictly prohibited from copying, quoting, reproducing, distributing, or using any part of this website’s content, logo, or branding materials without prior written authorization from ConsulRain Company.",
+      "Unauthorized use of our intellectual property may result in legal action."
+    ],
+    "requestPermission": "Request for Permission",
+    "requestPermissionDesc": "To request permission for use of any content or branding, please contact us at:",
+    "legalDisclaimer": "Legal Disclaimer",
+    "legalDisclaimerDesc": "By accessing this website, you acknowledge and agree to comply with all terms and conditions outlined in this policy. ConsulRain Company retains the authority to update or modify this policy at any time, without prior notice.",
+    "email": "info@consulrain.com",
+    "phone": "+966540478767"
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "company": {
+      "Company": "Company"
+    },
+    "ourServices": {
+      "Our Services": "Our Services"
+    },
+    "training": {
+      "Training": "Training"
+    },
+    "ConsulRainCo": "ConsulRain Co",
+    "brandDescription": "Madar Development is an integrated consulting firm offering comprehensive logistics, financial, and management services to non-profits, startups, government and industrial organizations. Founded in September 2025, it is led by a team of expert consultants with over 20 years of experience."
+  },
+  "partners": {
+    "title": "Our Partners",
+    "description": "Over the years, we have proudly partnered with leading organizations across sectors, helping them reach their full potential, transform complexity into clarity, and achieve measurable, lasting impact."
+  },
+  "founders": {
+    "title": "Meet The Founders",
+    "founder1": {
+      "name": "Hussein Afifi",
+      "bio": "With many years of distinguished experience in consulting, training, and auditing, Mr. Hussein brings unparalleled expertise in a wide spectrum of management systems, from quality and food safety to business continuity, risk management, compliance, governance, and medical devices.  He has led initiatives in strategic planning, operational excellence, and process optimization across diverse sectors. His thoughtful approach and deep understanding of organizational dynamics have positioned him as a trusted partner to over 1,000 organizations, spanning government entities, private enterprises, and leading organizations across the region. Mr. Hussein's legacy is defined by precision, impact, and a lasting commitment to empowering organizations to thrive with confidence"
+    },
+    "founder2": {
+      "name": "Ibtessam",
+      "bio": "holds a degree in Biotechnology and a PhD in Biotechnology, with a specialization in food safety and nutritional sciences. With a strong scientific foundation and applied expertise, she has guided organizations in developing food safety-focused, regulation-compliant systems that prioritize safety and efficiency. Her unique blend of academic rigor and hands-on experience makes her a highly respected consultant and trainer, trusted by both regional and international institutions seeking effective training and compliance solutions. "
+    }
+  },
+  "hero": {
+    "title": "Turning Vision into Reality, Strategically",
+    "subtitle": "ConsulRain drives business growth through expert consulting and targeted training in management, finance, and operations.",
+    "cta": "Learning Journeys",
+    "alt": {
+      "person1": "A smiling man in a suit",
+      "person2": "A woman with glasses in a professional setting",
+      "person3": "A person in a hard hat at a construction site",
+      "person4": "A woman in a business meeting"
+    }
+  },
+  "feedback": {
+    "button": "Feedback",
+    "title": "Send feedback",
+    "idea": {
+      "title": "Ideas / Feature",
+      "description": "Share your ideas with us"
+    },
+    "issue": {
+      "title": "Issue/Bug",
+      "description": "Report a problem"
+    },
+    "form": {
+      "fullName": "Full name",
+      "email": "Email",
+      "title": "Title",
+      "details": "Share us more details",
+      "screenshot": "Screenshot",
+      "upload": "Upload (500KB)",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "successTitle": "Feedback Sent",
+    "successMessage": "Thank you for your feedback!",
+    "errorTitle": "Submission Failed",
+    "errorMessage": "Could not send feedback. Please try again.",
+    "fileTooLargeTitle": "File Too Large",
+    "fileTooLargeText": "File size must be less than 500KB",
+    "screenshotPermission": {
+      "title": "Allow ConsulRain.ai to see this tab?",
+      "description": "The site will be able to see the contents of this tab",
+      "cancel": "Cancel",
+      "allow": "Allow"
+    },
+    "topbar": {
+      "social": {
+        "facebook": "Follow us on Facebook",
+        "snapchat": "Follow us on Snapchat",
+        "linkedin": "Follow us on LinkedIn",
+        "tiktok": "Follow us on TikTok",
+        "instagram": "Follow us on Instagram"
+      }
+    },
+    "files": {
+      "screenshot": "screenshot.png"
+    }
+  },
+  "ourServices": {
+    "title": "Our Services",
+    "service1": "Supply chain & Logistics",
+    "service2": "Sales",
+    "service3": "Marketing",
+    "service4": "Compliance",
+    "service5": "Finance & Accounting",
+    "service6": "Food Safety",
+    "service7": "Information Technology",
+    "service8": "Human Resources",
+    "service9": "Quality Control",
+    "service10": "Production",
+    "service11": "Softskills",
+    "service12": "Leadership",
+    "service13": "Administration"
+  },
+
+  "training": {
+    "heroSection": {
+      "title": "Empower Your Team Today to Lead Tomorrow",
+
+      "learningHours": "Learning Hours",
+      "professionalsTrained": "Professionals Trained",
+      "industriesServed": "Industries Served",
+      "ctaButton": "Start Now",
+      "firstNumber": "2M+",
+      "secondNumber": "60K+",
+      "thirdNumber": "30+"
+    },
+    "introSection": {
+      "title": "Training That",
+      "description": "At ConsulRain, we believe in the power of training to transform. We go beyond conventional workshops to deliver immersive learning experiences, thoughtfully aligned with your business priorities.",
+      "highlightedWord": "Transforms",
+      "text1": "We go beyond conventional workshops",
+      "text2": "Each training journey follows a meticulously crafted process"
+    },
+    "trainingProcess": {
+      "title": "Meticulously crafted process",
+      "highlightedWord": "Delivers",
+      "steps": {
+        "1": {
+          "title": "Pre-Training Diagnosis",
+          "description": "We start a comprehensive gap analysis to evaluate the current business performance, identifying skills and competences gaps.",
+          "note": "Fees could be applied"
+        },
+        "2": {
+          "title": "Customized Training Programs",
+          "description": "From leadership and soft skills to technical and industry-specific topics, we craft solutions tailored to each department’s needs. Our programs are led by experienced trainers and subject-matter experts who translate knowledge into measurable impact."
+        },
+
+        "3": {
+          "title": "Post-Training Evaluation",
+          "description": "We turn learning impact into numbers. Through tailored metrics and detailed reporting, we measure the impact of each training on performance and productivity, translating progress into trackable numbers.",
+          "note": "Fees could be applied"
+        }
+      }
+    },
+    "trainingBusinessLines": {
+      "title": "Training Business Lines"
+    }
+  },
+  "About": {
+    "title": "About us"
+  },
+  "feasibility": {
+    "title": "Feasibility Studies",
+    "intro": "We are dedicated to providing comprehensive feasibility studies that empower businesses, investors, and entrepreneurs to make well-informed decisions. Our studies comprehensively evaluate the viability of projects across diverse sectors, seamlessly integrating market intelligence, financial analysis, and technical assessments to ensure strategic clarity and effective risk management.\nWhether you are embarking on a new venture, expanding your operations, or exploring investment opportunities, our feasibility studies furnish the invaluable insights required to proceed with confidence and assurance.",
+    "showIntro": "Show More",
+    "hideIntro": "Show Less",
+    "services": {
+      "market": {
+        "title": "Market Feasibility",
+        "items": [
+          "Market demand analysis",
+          "Competitive landscape evaluation",
+          "Customer segmentation and behavior analysis",
+          "Pricing strategy recommendations"
+        ]
+      },
+      "technical": {
+        "title": "Technical Feasibility",
+        "items": [
+          "Site and location analysis",
+          "Technology and infrastructure requirements assessment",
+          "Operational workflow design evaluation",
+          "Resource availability and logistics assessment"
+        ]
+      },
+      "financial": {
+        "title": "Financial Feasibility",
+        "items": [
+          "Capital investment estimation",
+          "Revenue and cost projections",
+          "Break-even analysis",
+          "ROI and NPV calculations"
+        ]
+      },
+      "legal": {
+        "title": "Legal and Regulatory Feasibility",
+        "items": [
+          "Compliance with local and international regulations",
+          "Licensing and permit requirements assessment",
+          "Environmental impact assessments"
+        ]
+      },
+      "organizational": {
+        "title": "Organizational Feasibility",
+        "items": [
+          "Human resource planning",
+          "Management structure evaluation",
+          "Strategic alignment with business goals"
+        ]
+      },
+      "risk": {
+        "title": "Risk Assessment and Mitigation",
+        "items": [
+          "SWOT analysis",
+          "Risk identification and prioritization",
+          "Contingency planning"
+        ]
+      }
+    }
+  },
+  "consultation": {
+    "title": "Consulting Services",
+    "intro": "",
+    "showIntro": "Read More",
+    "hideIntro": "Close",
+    "scopeTitle": "Scope of Services",
+    "features": {},
+    "points": {
+      "0": "Specialized technical, financial and administrative consultancy across sectors.",
+      "1": "Training programs and capacity building to develop teams and enhance competencies.",
+      "2": "Professional management of events and conferences to maximize impact.",
+      "3": "Management of strategic partnerships and technical cooperation with local and international entities.",
+      "4": "Planning and technical support services to underpin growth and development strategies."
+    },
+    "experience": "Years of Experience",
+    "experiencePoints": {
+      "0": "Technical & Financial Expertise",
+      "1": "Capacity Building & Training",
+      "2": "Event & Conference Impact",
+      "3": "Strategic Partnerships & Collaboration"
+    },
+    "contact": {
+      "title": "The best",
+      "subtitle": "you can take",
+      "connect": "Connect with us",
+      "addressTitle": "Address",
+      "address": {
+        "0": "Riyadh, Saudi Arabia"
+      },
+      "workingHours": "Sunday → Thursday 9am to 5pm"
+    },
+    "form": {
+      "nameLabel": "Hello, my name is:",
+      "namePlaceholder": "Name",
+      "emailLabel": "Here is my email:",
+      "emailPlaceholder": "Email",
+      "projectLabel": "Tell us about your project",
+      "projectOptions": {
+        "0": "Social media marketing",
+        "1": "Business strategy",
+        "2": "Operations improvement",
+        "3": "Other"
+      },
+      "referralLabel": "How did you hear about ConsulRain?",
+      "referralOptions": {
+        "0": "Google",
+        "1": "Facebook",
+        "2": "LinkedIn",
+        "3": "SnapChat",
+        "4": "Instagram",
+        "5": "TikTok",
+        "6": "Other"
+      },
+      "descLabel": "About project:",
+      "descPlaceholder": "Briefly describe your project or question...",
+      "sendBtn": "Send Request",
+      "submitting": "Submitting...",
+      "connect": "Connect with us",
+      "addressTitle": "Our Address",
+      "address": {
+        "0": "Riyadh, Saudi Arabia",
+        "1": ""
+      },
+      "workingHours": "Saturday - Thursday: 9am - 6pm"
+    },
+    "successTitle": "Request Sent!",
+    "successMessage": "Your consultation request has been sent successfully. We will get back to you shortly.",
+    "errorMessageTitle": "Submission Failed",
+    "errorMessageText": "There was an error sending your request. Please try again."
+  },
+  "ourServicesSection": {
+    "title": "Our Services",
+    "subtitle": "Training, Consultation & Feasibility Studies",
+    "description": "Unlock your organization’s full potential with our expert-led training programs, strategic consultation, and in-depth feasibility studies. We help you build skills, foster collaboration, and develop actionable strategies for sustainable growth and operational excellence.",
+    "cards": {
+      "training": {
+        "title": "Training",
+        "front": "We go beyond conventional workshops to deliver immersive learning experiences, thoughtfully aligned with your business priorities",
+        "backTitle": "meticulously crafted process",
+        "back": "Pre-Training Diagnosis, Customized Training Programs, Post-Training Evaluation."
+      },
+      "consultation": {
+        "title": "Consulting",
+        "front": "Our consultation is rooted in collaboration and strategic clarity",
+        "backTitle": "Strategic Consultation Process",
+        "back": "In-depth analysis, collaborative planning, and actionable recommendations to help your organization overcome obstacles and achieve long-term growth."
+      },
+      "feasibilityStudies": {
+        "title": "Feasibility Studies",
+        "front": "Comprehensive studies to help you make well-informed business decisions",
+        "backTitle": "Key Services Offered",
+        "back": {
+          "item1": "Market, Technical, Financial, Legal, Organizational Feasibility",
+          "item2": "Risk Assessment & Mitigation"
+        }
+      }
+    },
+    "learnMore": "LEARN MORE"
+  },
+  "visionMission": {
+    "vision": {
+      "title": "Who We Are",
+      "subtitle": "Madar Development is an integrated development company offering comprehensive consulting services across technical, financial, and managerial domains. Founded in September 2025, the company is led by a team of expert consultants with over 20 years of practical experience delivering tailored solutions to organizations, government entities, and private sector clients. We aim to enable our clients to achieve sustainable developmental impact through strategic consulting, advanced training programs, and modern technologies."
+    },
+    "mission": {
+      "title": "Vision",
+      "subtitle": "To be the region’s first choice for technical, financial, and managerial consultancy, delivering clear and sustainable impact through innovative solutions that drive transformation and competitive advantage."
+    },
+    "journey": {
+      "title": "Mission",
+      "subtitle": "We strive to provide high-quality consulting and training services leveraging technology and artificial intelligence where appropriate, with a focus on measurable results and sustainable development impact. We operate with transparency and integrity, embracing innovation and social responsibility as core values in every engagement."
+    },
+    "values": {
+      "title": "Values",
+      "subtitle": "Transparency, Integrity, Innovation & Creativity, Accountability, Governance, Social Responsibility, and Teamwork."
+    },
+    "learnMore": "Learn more"
+  },
+  "integratedSolutions": {
+    "subtitle": "STRATEGIC OBJECTIVES",
+    "title": "Our Strategic Objectives & Consulting Areas",
+    "description": "Madar Development focuses on building institutional capacity and delivering sustainable impact. Our objectives are centered on workforce enablement, institutional development, project unit creation, strategic partnership building, strategic & operational planning systems, and designing robust policies and operational frameworks to enhance governance and operational efficiency.",
+    "strategicObjectives": [
+      "Enable and qualify human resources across private companies, non-profit organizations, and government or quasi-government entities to raise performance and achieve excellence.",
+      "Develop institutional structures for companies, non-profits and public entities to align with international best practices.",
+      "Establish and develop specialized project management units within startups and non-profits to ensure project sustainability and success.",
+      "Strengthen local, regional, and international communication and build strategic partnerships that support shared goals.",
+      "Design and implement strategic and operational planning systems to support decision-making and deliver sustainable impact.",
+      "Develop policies, procedures, and technical, financial, and administrative systems to boost operational efficiency and sound governance."
+    ],
+    "consultingAreas": [
+      "Specialized consultancy in technical, financial, and managerial matters across all sectors.",
+      "Training programs and capacity building to develop staff and enhance skills.",
+      "Professional event and conference organization to maximize impact.",
+      "Management of strategic partnerships and technical cooperation with local and international entities.",
+      "Planning and technical support services to back growth and development strategies."
+    ],
+    "cards": {
+      "workers": {
+        "title": "Skilled Professionals",
+        "description": "A multidisciplinary team with deep practical experience and industry knowledge."
+      },
+      "process": {
+        "title": "Proven Methodology",
+        "description": "We follow proven best practices and customized processes to deliver measurable results."
+      }
+    },
+    "experience": "Years Of Experience",
+    "features": {
+      "expertise": "Sustainable Partnerships",
+      "approach": "Tailored Solution Design",
+      "collaboration": "Lasting Impact"
+    },
+    "imageAlt": "A team of professionals collaborating in a modern office setting."
+  },
+  "copyright": {
+    "text": "MADAR DEVELOPMENT. All Rights Reserved."
+  },
+  "scopeOfServices": {
+    "title": "SCOPE OF SERVICES",
+    "subtitle": "Ready to Empower",
+    "description": "With a deep understanding of today’s business dynamics, we deliver targeted solutions across key domains:",
+    "services": {
+      "institutionalDevelopment": "Institutional Development Consulting",
+      "projectsDivision": "Projects Division Services",
+      "supplyChain": "Supply Chain & Logistics",
+      "sales": "Sales",
+      "administration": "Administration",
+      "marketing": "Marketing",
+      "leadership": "Leadership",
+      "compliance": "Compliance",
+      "softskills": "Soft Skills",
+      "financeAccounting": "Finance & Accounting",
+      "production": "Production",
+      "foodSafety": "Food Safety",
+      "qualityControl": "Quality Control",
+      "humanResources": "Human Resources",
+      "informationTechnology": "Information Technology"
+    },
+    "table": {
+      "service": "Service",
+      "price": "Price"
+    },
+    "currency": "SR",
+    "serviceDetails": {
+      "institutionalDevelopment": {
+        "title": "Institutional Development Consulting",
+        "description": "Institutional Development Consulting covering:\n• Services for Emerging Associations\n• Services for Mid-sized Associations\n• Services for Large Associations\n\nClick on any institutional service below to learn more about it."
+      },
+      "ﺧﺪﻣﺎت اﻟﺠﻤﻌﻴﺎت اﻟﻨﺎﺷﺌﺔ": {
+        "title": "Services for Emerging Associations",
+        "description": "• Design of a strategic and operational plan — 15,000 SAR\n\n• Design of policies, procedures, and regulations manual — 4,500 SAR\n\n• Training programs and courses (approx. 30 training hours) — Price: 500 SAR per course\n\n• Grant sourcing and financial resource development plan — 2,000 SAR\n\n• Volunteer recruitment and management system (6 months) — 4,000 SAR\n\n• Technical and financial report templates — 2,000 SAR\n\n• Monitoring & evaluation report templates for staff performance (for association staff) — 1,500 SAR\n\n• Donor & sponsor outreach templates and CSR communications — 500 SAR\n\n• Comprehensive financial and accounting management system (monthly, quarterly, annual), preparation of final financial report, and external audit support — 10,000 SAR",
+        "items": [
+          {
+            "title": "Design of a strategic and operational plan",
+            "price": "15000"
+          },
+          {
+            "title": "Design of policies, procedures, and regulations manual",
+            "price": "4500"
+          },
+          {
+            "title": "Training programs and courses (approx. 30 training hours)",
+            "price": "500 per course"
+          },
+          {
+            "title": "Grant sourcing and financial resource development plan",
+            "price": "2000"
+          },
+          {
+            "title": "Volunteer recruitment and management system (6 months)",
+            "price": "4000"
+          },
+          {
+            "title": "Technical and financial report templates",
+            "price": "2000"
+          },
+          {
+            "title": "Monitoring & evaluation report templates for staff performance",
+            "price": "1500"
+          },
+          {
+            "title": "Donor & sponsor outreach templates and CSR communications",
+            "price": "500"
+          },
+          {
+            "title": "Comprehensive financial & accounting system + final report & external audit support",
+            "price": "10000"
+          }
+        ]
+      },
+      "projectsDivision": {
+        "title": "Projects Division Services",
+        "description": "Services focused on project management, feasibility, and delivery support for large-scale initiatives."
+      },
+      "supplyChain": {
+        "title": "Supply Chain & Logistics",
+        "description": "We help organizations streamline their supply chain operations, reduce lead times, and optimize logistics networks. Our programs focus on inventory management, demand forecasting, procurement strategies, and end-to-end visibility to enhance efficiency and reduce costs."
+      },
+      "sales": {
+        "title": "Sales",
+        "description": "Our sales training and consulting services empower teams to close more deals, build stronger client relationships, and improve conversion rates. We focus on consultative selling, sales pipeline management, negotiation skills, and performance analytics."
+      },
+      "administration": {
+        "title": "Administration",
+        "description": "We enhance administrative efficiency through process optimization, time management, and digital tools. Our training equips administrative professionals with the skills to support leadership, manage workflows, and maintain organizational agility."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "We support marketing teams in building data-driven strategies, enhancing brand positioning, and executing high-impact campaigns. Topics include digital marketing, customer segmentation, content strategy, and marketing analytics."
+      },
+      "leadership": {
+        "title": "Leadership",
+        "description": "Our leadership development programs are designed to cultivate visionary, emotionally intelligent, and results-driven leaders. We focus on strategic thinking, decision-making, team empowerment, and change management."
+      },
+      "compliance": {
+        "title": "Compliance",
+        "description": "We help organizations stay ahead of regulatory requirements and international standards. Our training covers key ISO certifications including:\n• ISO 9001 – Quality Management Systems\n• ISO 27001 – Information Security Management\n• ISO 22301 – Business Continuity Management\n• ISO 14001 – Environmental Management\n• ISO 45001 – Occupational Health & Safety\n• ISO 31000 – Risk Management Guidelines\n• ISO 22000 – Food Safety Management Systems\n\nWe also focus on internal controls, audit readiness, and ethical practices—ensuring full compliance, operational resilience, and reduced legal exposure."
+      },
+      "softskills": {
+        "title": "Soft Skills",
+        "description": "We develop essential interpersonal skills that drive collaboration, communication, and workplace harmony. Topics include emotional intelligence, conflict resolution, adaptability, and presentation skills."
+      },
+      "financeAccounting": {
+        "title": "Finance & Accounting",
+        "description": "We provide training and consulting in financial planning, budgeting, cost control, and reporting. Our programs help teams make informed decisions, ensure compliance, and improve financial performance."
+      },
+      "production": {
+        "title": "Production",
+        "description": "We work with production teams to enhance operational efficiency, reduce waste, and implement lean manufacturing principles. Our focus includes process improvement, quality assurance, and production planning."
+      },
+      "foodSafety": {
+        "title": "Food Safety",
+        "description": "We deliver specialized training in food safety standards, HACCP, and hygiene practices to ensure compliance & Conformance with local and international regulations—protecting both consumers and brand reputation. Our programs include:\n• Highfield-accredited courses – Covering food hygiene, allergen awareness, and safe food handling\n• Prerequisite Programs (PRPs) – Including not limited to: cleaning & sanitation, pest control, personal hygiene, and supplier management\n• Catering Services Compliance – Ensuring safe food preparation, storage, and service in commercial kitchens\n\nThis comprehensive approach helps organizations maintain high safety standards, meet regulatory requirements, and build trust with customers."
+      },
+      "qualityControl": {
+        "title": "Quality Control",
+        "description": "Our quality control programs focus on inspection techniques, root cause analysis, and continuous improvement. We help organizations maintain high standards and reduce defects across products and services."
+      },
+      "humanResources": {
+        "title": "Human Resources",
+        "description": "We support HR teams in talent acquisition, performance management, employee engagement, and organizational development. Our services align HR practices with business strategy to drive growth."
+      },
+      "informationTechnology": {
+        "title": "Information Technology",
+        "description": "We provide comprehensive IT training and consulting services designed to empower organizations in today’s digital landscape. Our programs cover:\n• Cybersecurity – Protecting digital assets through threat detection, risk mitigation, and compliance with global standards like ISO/IEC 27001.\n• Data Analytics – Equipping teams with tools and techniques to extract insights, visualize trends, and make data-driven decisions using platforms like Power BI, Tableau, and Python.\n• Cloud Computing – Training on cloud infrastructure, migration strategies, and services such as AWS, Microsoft Azure, and Google Cloud to enhance scalability and efficiency.\n• Digital Transformation – Guiding businesses through technology adoption, process automation, and innovation strategies to stay competitive and agile.\n• IT Governance & Compliance – Ensuring alignment with frameworks like COBIT, ITIL, and ISO standards for secure and efficient IT operations.\n• Software & Systems Training – Covering ERP systems, CRM platforms, and productivity tools to improve operational workflows and user proficiency.\n\nOur goal is to equip teams with the technical skills, strategic mindset, and digital fluency needed to thrive in a tech-driven world."
+      }
+    }
+  },
+  "institutional": {
+    "title": "Institutional Development Consulting",
+    "metaDescription": "Institutional development consulting services to strengthen governance, strategy, and operational capacity for organizations.",
+    "servicesSectionTitle": "Our Institutional Services",
+    "services": {
+      "0": {
+        "title": "Services for Emerging Associations",
+        "desc": "Tailored support to establish governance, registration, and foundational processes for emerging associations."
+      },
+      "1": {
+        "title": "Services for Mid-sized Associations",
+        "desc": "Capacity building, strategic planning, and operational systems to professionalize mid-sized associations."
+      },
+      "2": {
+        "title": "Services for Large Associations",
+        "desc": "Advanced governance, partnership management, and impact measurement for large associations."
+      }
+    }
+  }
+}

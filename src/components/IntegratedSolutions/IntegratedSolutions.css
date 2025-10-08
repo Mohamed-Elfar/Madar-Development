@@ -1,0 +1,132 @@
+.integrated-solutions-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.integrated-solutions-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.integrated-solutions-section .card h3 {
+  color: var(--color-primary-500, #189748);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.integrated-solutions-section .left-column .subtitle {
+  color: var(--color-primary-500, #189748);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.integrated-solutions-section .left-column h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.integrated-solutions-section .left-column > p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.integrated-solutions-section .cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.integrated-solutions-section .card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.integrated-solutions-section .icon-wrapper {
+  background-color: var(--color-primary-500, #189748);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+}
+
+.integrated-solutions-section .card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.integrated-solutions-section .card p {
+  color: #6c757d;
+}
+
+.integrated-solutions-section .right-column .image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.integrated-solutions-section .right-column img {
+  width: 100%;
+  display: block;
+}
+
+.integrated-solutions-section .right-column .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(var(--color-primary-rgb, 24, 151, 72), 0.95);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.integrated-solutions-section .experience h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.integrated-solutions-section .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.integrated-solutions-section .features li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.integrated-solutions-section .features i {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .integrated-solutions-section .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrated-solutions-section .cards {
+    flex-direction: column;
+  }
+  .integrated-solutions-section .right-column .overlay {
+    flex-direction: column;
+    text-align: center;
+  }
+}

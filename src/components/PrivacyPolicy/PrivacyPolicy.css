@@ -1,0 +1,75 @@
+.privacy-policy-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #182f40 60%, #4a8b8b 100%);
+  padding: 40px 0;
+}
+
+.privacy-policy-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(24, 47, 64, 0.15);
+  max-width: 700px;
+  width: 100%;
+  padding: 40px 32px;
+  animation: fadeInUp 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.privacy-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #182f40;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.privacy-section {
+  margin-bottom: 32px;
+}
+
+.privacy-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4a8b8b;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.privacy-subheading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #182f40;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.privacy-list {
+  margin-left: 18px;
+  margin-bottom: 12px;
+  color: #182f40;
+  font-size: 1rem;
+}
+
+.privacy-contact {
+  color: #4a8b8b;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}

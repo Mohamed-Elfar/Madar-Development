@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Institutional development concept">
+  <defs>
+    <linearGradient id="brandGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#189748"/>
+      <stop offset="100%" stop-color="#0e6c3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fafdfa" />
+
+  <!-- Network nodes representing institutions -->
+  <g transform="translate(80,60)">
+    <circle cx="120" cy="90" r="36" fill="#fff" stroke="#e6f7ee" />
+    <circle cx="300" cy="60" r="28" fill="url(#brandGrad)" />
+    <circle cx="480" cy="110" r="34" fill="#fff" stroke="#e6f7ee" />
+
+    <line x1="156" y1="90" x2="272" y2="72" stroke="#dff9e8" stroke-width="4" />
+    <line x1="328" y1="72" x2="446" y2="106" stroke="#dff9e8" stroke-width="4" />
+  </g>
+
+  <!-- Document / policy icon -->
+  <g transform="translate(120,240)">
+    <rect x="0" y="0" width="160" height="200" rx="8" fill="#fff" stroke="#e6f7ee" />
+    <rect x="18" y="18" width="124" height="20" rx="4" fill="url(#brandGrad)" />
+    <rect x="18" y="52" width="124" height="12" rx="4" fill="#f3fbf7" />
+    <rect x="18" y="74" width="80" height="12" rx="4" fill="#f3fbf7" />
+  </g>
+
+  <!-- Growth arrow and chart -->
+  <g transform="translate(340,260)">
+    <rect x="0" y="0" width="420" height="180" rx="8" fill="#fff" stroke="#e6f7ee" />
+    <polyline points="36,130 120,80 200,100 300,40 380,60" fill="none" stroke="url(#brandGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="120" cy="80" r="8" fill="#189748" />
+    <circle cx="300" cy="40" r="8" fill="#189748" />
+  </g>
+
+  <!-- Caption -->
+  <g transform="translate(60,28)">
+    <rect x="0" y="0" width="260" height="40" rx="8" fill="url(#brandGrad)" />
+    <text x="18" y="26" font-family="Inter, Arial, sans-serif" font-size="16" fill="#fff">Institutional Development</text>
+  </g>
+</svg>

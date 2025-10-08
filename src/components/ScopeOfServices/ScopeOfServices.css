@@ -1,0 +1,135 @@
+.service-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.service-item:hover {
+  background-color: #f3f4f6; /* A light gray for hover effect */
+}
+
+.service-modal-list-item {
+  margin-bottom: 0.5rem;
+  padding-left: 1em;
+  position: relative;
+}
+
+/* Arrow styling and RTL adjustments */
+.service-icon.arrow {
+  display: inline-block;
+  transform: rotate(0deg);
+  margin-top: 0px !important;
+  transition: transform 0.2s ease;
+}
+html[lang="ar"] .service-icon.arrow {
+  transform: rotate(180deg);
+  padding-right: 12px !important;
+  padding-left: 0;
+}
+html[lang="ar"] .service-block ul {
+  padding-right: 32px !important;
+}
+html[lang="ar"] .service-block ul svg {
+  margin-left: 8px;
+}
+/* Institutional subservices RTL padding */
+.institutional-subservices.rtl {
+  padding-right: 16px !important;
+}
+
+/* Scope image adjustments */
+.scope-image {
+  max-height: 220px;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: rgba(24, 151, 72, 0.06);
+  border: 1px solid rgba(24, 151, 72, 0.12);
+}
+
+@media (min-width: 1024px) {
+  .scope-image {
+    max-height: 320px;
+  }
+}
+
+/* Pricing panel shown when clicking a specific subservice */
+.pricing-panel {
+  margin-top: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 151, 72, 0.04),
+    rgba(139, 214, 164, 0.02)
+  );
+  border: 1px solid rgba(24, 151, 72, 0.08);
+}
+.pricing-panel h4 {
+  margin: 0 0 8px 0;
+  color: var(--color-brand-green, #189748);
+  font-weight: 700;
+}
+.pricing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pricing-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 6px;
+  border-bottom: 1px dashed rgba(24, 151, 72, 0.06);
+  font-size: 14px;
+}
+.pricing-list li:last-child {
+  border-bottom: none;
+}
+.pricing-price {
+  color: var(--color-brand-green, #189748);
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+/* RTL adjustments */
+html[lang="ar"] .pricing-list li {
+  direction: rtl;
+}
+
+/* Emerging associations table styling inside modal */
+.emerging-table-wrap {
+  overflow-x: auto;
+}
+.emerging-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.emerging-table th,
+.emerging-table td {
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: left;
+  vertical-align: top;
+}
+.emerging-table th {
+  background: rgba(24, 151, 72, 0.06);
+  color: var(--color-brand-green, #189748);
+  font-weight: 700;
+}
+.emerging-table td:last-child,
+.emerging-table th:last-child {
+  text-align: right;
+}
+.pricing-price {
+  color: var(--color-brand-green, #189748);
+  font-weight: 700;
+}
+
+/* RTL tweaks */
+html[lang="ar"] .emerging-table th,
+html[lang="ar"] .emerging-table td {
+  text-align: right;
+}
