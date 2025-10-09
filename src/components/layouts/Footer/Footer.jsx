@@ -9,6 +9,7 @@ import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,
   EMAILJS_USER_ID,
+  EMAILJS_TO_EMAIL,
 } from "../../../emailjsConfig";
 
 export default function Footer() {
@@ -66,7 +67,7 @@ export default function Footer() {
                       formType: "Newsletter Signup",
                       email: footerEmail,
                       // explicitly route this newsletter to marketing
-                      to_email: "marketingmadar@madardevelopment.com",
+                      to_email: EMAILJS_TO_EMAIL,
                     };
 
                     const emailBody = createEmailTemplate(templateParams);

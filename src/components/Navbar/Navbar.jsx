@@ -137,7 +137,7 @@ const Navbar = memo(() => {
                   >
                     {t("navbar.ourServices")}
                   </Menu.Button>
-                  <Menu.Items className="custom-dropdown-menu show">
+                  <Menu.Items className="custom-dropdown-menu show !w-max">
                     <Menu.Item>
                       {({ active }) => (
                         <NavLink

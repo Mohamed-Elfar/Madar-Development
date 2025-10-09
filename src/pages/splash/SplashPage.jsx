@@ -38,7 +38,6 @@ export default function SplashPage() {
               dir={lang === "ar" ? "rtl" : "ltr"}
               style={{
                 unicodeBidi: "plaintext",
-                whiteSpace: "nowrap",
               }}
             >
               {t("brandName")}

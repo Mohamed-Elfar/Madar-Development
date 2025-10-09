@@ -149,8 +149,8 @@ export default function ProjectsDivision() {
 
       {/* Inline services table (same data as modal) */}
       <section className="py-8 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="bg-white rounded-md p-6 shadow-sm">
+        <div className="container mx-auto">
+          <div className="bg-white rounded-md py-6 shadow-sm">
             <h3 className="text-lg font-semibold mb-4">{pageTitle}</h3>
             <div className="emerging-table-wrap">
               <table className="emerging-table w-full" role="table">

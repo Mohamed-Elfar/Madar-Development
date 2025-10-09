@@ -50,7 +50,25 @@ export default function TrainingIntroSection() {
                       ></path>
                     </svg>
                   </span>
-                  <span className="course-text">{c}</span>
+                  <span className="course-text">
+                    {c}
+                    {c === t("training.introSection.fundraisingCourse") && (
+                      <>
+                        <a
+                          href="https://forms.gle/tRZgu28xtvYLZuzL7"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="ml-2 text-primary-700 underline"
+                          aria-label={
+                            t("training.introSection.fundraisingLinkLabel") +
+                            " - Open fundraising course sign-up form in a new tab"
+                          }
+                        >
+                          {t("training.introSection.fundraisingLinkLabel")}
+                        </a>
+                      </>
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -71,7 +89,25 @@ export default function TrainingIntroSection() {
                       ></path>
                     </svg>
                   </span>
-                  <span className="course-text">{c}</span>
+                  <span className="course-text">
+                    {c}
+                    {c === t("training.introSection.fundraisingCourse") && (
+                      <>
+                        <a
+                          href="https://forms.gle/tRZgu28xtvYLZuzL7"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="ml-2 !text-primary-500 !underline fw-bold "
+                          aria-label={
+                            t("training.introSection.fundraisingLinkLabel") +
+                            " - Open fundraising course sign-up form in a new tab"
+                          }
+                        >
+                          {t("training.introSection.fundraisingLinkLabel")}
+                        </a>
+                      </>
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>

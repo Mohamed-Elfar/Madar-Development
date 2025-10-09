@@ -328,7 +328,9 @@
         "Designing Community Initiatives",
         "Technical Reporting & Project Closure",
         "Specialist Training in Fundraising & Resource Development for Nonprofits"
-      ]
+      ],
+      "fundraisingCourse": "Specialist Training in Fundraising & Resource Development for Nonprofits",
+      "fundraisingLinkLabel": "(click here)"
     },
     "trainingProcess": {
       "title": "Our practical training process",
