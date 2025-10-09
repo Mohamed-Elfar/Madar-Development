@@ -13,9 +13,7 @@ const VisionMission = lazy(() =>
 const StatsSection = lazy(() =>
   import("../../components/StatsSection/StatsSection")
 );
-const EmpowerSection = lazy(() =>
-  import("../../components/EmpowerSection/EmpowerSection")
-);
+
 const Services = lazy(() => import("../../components/OurServices/OurServices"));
 const LogosCarousel = lazy(() =>
   import("../../pages/GrantOpportunities/LogosCarousel")
