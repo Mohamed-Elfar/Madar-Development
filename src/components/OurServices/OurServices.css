@@ -69,11 +69,12 @@
 }
 .offer .flip-card {
   background-color: transparent;
+  /* let the parent li control sizing so flex-grow can work */
   width: 100%;
-  max-width: 376px;
-  height: 320px;
+  max-width: none;
+  min-height: 320px;
+  height: 100%;
   perspective: 1000px;
-  margin: auto;
 }
 
 .offer .flip-card-inner {
@@ -105,13 +106,13 @@
 }
 
 .offer .flip-card-front {
-  background-color: #1e293b;
-  color: #fff;
+  background-color: var(--color-primary-900);
+  color: white;
 }
 
 .offer .flip-card-back {
-  background-color: #32d8cc;
-  color: #1e293b;
+  background-color: var(--color-brand-green);
+  color: var(--color-text-inverse);
   transform: rotateY(180deg);
 }
 
@@ -122,6 +123,48 @@
   text-align: center;
   transform: translateZ(60px);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.18));
+}
+
+/* Flex layout for the cards list so we can use flex-grow */
+.offer__cards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem; /* spacing between cards */
+  justify-content: center;
+}
+
+.offer__cards ul li {
+  box-sizing: border-box;
+  display: flex; /* allow .flip-card to stretch */
+  width: 100%;
+  flex: 0 1 100%; /* default mobile: full width */
+}
+
+/* Make flip-card stretch to fill its list item */
+.offer__cards ul li .flip-card {
+  width: 100%;
+}
+
+/* Large screens: top three occupy ~33% each, bottom two grow to fill the row */
+@media (min-width: 992px) {
+  .offer__cards ul li {
+    flex: 0 1 calc(33.333% - 1rem);
+  }
+
+  /* 4th and 5th items (bottom row) grow to fill the remaining space */
+  .offer__cards ul li:nth-child(n + 4) {
+    flex: 1 1 calc(48% - 1rem);
+  }
+}
+
+/* Extra wide screens: allow the 5th card to grow a bit more if there is space */
+@media (min-width: 1300px) {
+  .offer__cards ul li:nth-child(5) {
+    flex: 1.25 1 calc(48% - 1rem);
+  }
 }
 
 .offer .flip-card-inner h3 {
@@ -170,10 +213,47 @@
 
 .offer .flip-card-inner .icon {
   font-size: 48px;
-  color: #32d8cc;
+  color: var(--color-brand-green);
   margin-bottom: 18px;
   transform: translateZ(70px);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.18));
+}
+
+/* Per-card color tweaks (card-1..card-4) */
+
+.offer .flip-card.card-1 .flip-card-back {
+  background: var(--gradient-primary-green);
+}
+
+.offer .flip-card.card-2 .flip-card-back {
+  background: linear-gradient(
+    180deg,
+    var(--color-brand-green-400),
+    var(--color-brand-green-600)
+  );
+}
+
+.offer .flip-card.card-3 .flip-card-back {
+  background: linear-gradient(
+    180deg,
+    var(--color-brand-green-300),
+    var(--color-brand-green)
+  );
+}
+
+.offer .flip-card.card-4 .flip-card-back {
+  background: linear-gradient(
+    180deg,
+    var(--color-brand-green-200),
+    var(--color-brand-green-400)
+  );
+}
+
+.back-desc {
+  margin: 5rem 0 1rem 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.98rem;
+  line-height: 1.4;
 }
 
 .offer .flip-card:hover .flip-card-inner {

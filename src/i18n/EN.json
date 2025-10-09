@@ -273,6 +273,7 @@
     "service13": "Administration"
   },
 
+
   "training": {
     "heroSection": {
       "title": "Empower Your Team Today to Lead Tomorrow",
@@ -429,34 +430,45 @@
     "errorMessageText": "There was an error sending your request. Please try again."
   },
   "ourServicesSection": {
+    "smallTitle": "Discover what we do",
     "title": "Our Services",
-    "subtitle": "Training, Consultation & Feasibility Studies",
-    "description": "Unlock your organization’s full potential with our expert-led training programs, strategic consultation, and in-depth feasibility studies. We help you build skills, foster collaboration, and develop actionable strategies for sustainable growth and operational excellence.",
+    "subtitle": "Integrated consulting & training tailored to your needs",
+    "description": "Practical training, tailored consulting, project delivery and grant support — designed to move your organization from plan to impact.",
     "cards": {
       "training": {
         "title": "Training",
-        "front": "We go beyond conventional workshops to deliver immersive learning experiences, thoughtfully aligned with your business priorities",
-        "backTitle": "meticulously crafted process",
-        "back": "Pre-Training Diagnosis, Customized Training Programs, Post-Training Evaluation."
+        "front": "Practical, hands-on programs to upskill teams and transfer capabilities.",
+        "backDescription": "Tailored curricula, practical labs and post-training support to ensure skills stick.",
+        "path": "/training"
       },
-      "consultation": {
+      "consulting": {
         "title": "Consulting",
-        "front": "Our consultation is rooted in collaboration and strategic clarity",
-        "backTitle": "Strategic Consultation Process",
-        "back": "In-depth analysis, collaborative planning, and actionable recommendations to help your organization overcome obstacles and achieve long-term growth."
+        "front": "Strategic and operational advisory to solve complex organizational challenges.",
+        "backDescription": "Evidence-driven strategies, implementation roadmaps and operational support.",
+        "path": "/consultation"
+      },
+      "projectsDivision": {
+        "title": "Projects Division Services",
+        "front": "End-to-end project design, management and operationalization support.",
+        "backDescription": "Dedicated project teams for proposal development, execution and monitoring.",
+        "path": "/projects-division"
+      },
+      "institutional": {
+        "title": "Institutional Development Consulting",
+        "front": "Organizational design, governance, and capacity-building services to strengthen institutions.",
+        "backDescription": "Organizational diagnostics, policy design, and capacity programs to improve governance and performance.",
+        "path": "/institutional-development"
       },
       "grantOpportunities": {
         "title": "Grant Opportunities",
-        "front": "Comprehensive studies to help you make well-informed business decisions",
-        "backTitle": "Key Services Offered",
-        "back": {
-          "item1": "Market, Technical, Financial, Legal, Organizational Feasibility",
-          "item2": "Risk Assessment & Mitigation"
-        }
+        "front": "Funding research, proposal development, and donor engagement support.",
+        "backDescription": "Targeted grant research, proposal writing and donor outreach services.",
+        "path": "/grant-opportunities"
       }
     },
     "learnMore": "LEARN MORE"
   },
+  
   "visionMission": {
     "vision": {
       "title": "Who We Are",

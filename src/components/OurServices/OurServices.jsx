@@ -5,39 +5,30 @@ import { useTranslation } from "react-i18next";
 const OurServices = () => {
   const { t } = useTranslation();
 
-  const cards = [
-    {
-      icon: <i className="fas fa-chalkboard-teacher" aria-hidden="true"></i>,
-      title: t("ourServicesSection.cards.training.title"),
-      front: t("ourServicesSection.cards.training.front"),
-      backTitle: t("ourServicesSection.cards.training.backTitle"),
-      back: t("ourServicesSection.cards.training.back"),
-      path: "/training",
-    },
-    {
-      icon: <i className="fas fa-users-cog" aria-hidden="true"></i>,
-      title: t("ourServicesSection.cards.consultation.title"),
-      front: t("ourServicesSection.cards.consultation.front"),
-      backTitle: t("ourServicesSection.cards.consultation.backTitle"),
-      back: t("ourServicesSection.cards.consultation.back"),
-      path: "/consultation",
-    },
-    {
-      icon: <i className="fas fa-file-signature" aria-hidden="true"></i>,
-      title: t("ourServicesSection.cards.grantOpportunities.title"),
-      front: t("ourServicesSection.cards.grantOpportunities.front"),
-      backTitle: t("ourServicesSection.cards.grantOpportunities.backTitle"),
-      back: (
-        <ul
-          style={{ textAlign: "left", paddingLeft: "1.2em", marginBottom: 0 }}
-        >
-          <li>{t("ourServicesSection.cards.grantOpportunities.back.item1")}</li>
-          <li>{t("ourServicesSection.cards.grantOpportunities.back.item2")}</li>
-        </ul>
-      ),
-      path: "/grant-opportunities",
-    },
+  const cardKeys = [
+    "training",
+    "consulting",
+    "projectsDivision",
+    "grantOpportunities",
+    "institutional",
   ];
+
+  const cards = cardKeys.map((k) => ({
+    icon:
+      k === "training" ? (
+        <i className="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+      ) : k === "consulting" ? (
+        <i className="fas fa-users-cog" aria-hidden="true"></i>
+      ) : k === "projectsDivision" ? (
+        <i className="fas fa-project-diagram" aria-hidden="true"></i>
+      ) : (
+        <i className="fas fa-file-signature" aria-hidden="true"></i>
+      ),
+    title: t(`ourServicesSection.cards.${k}.title`),
+    front: t(`ourServicesSection.cards.${k}.front`),
+    backDescription: t(`ourServicesSection.cards.${k}.backDescription`),
+    path: t(`ourServicesSection.cards.${k}.path`) || `/${k}`,
+  }));
 
   return (
     <section
@@ -65,7 +56,7 @@ const OurServices = () => {
             {cards.map((card, idx) => (
               <li className="cols mb-16" key={idx}>
                 <div
-                  className="flip-card"
+                  className={`flip-card card-${idx + 1}`}
                   aria-label={`${card.title} service card`}
                 >
                   <div className="flip-card-inner">
@@ -77,8 +68,8 @@ const OurServices = () => {
                       <p>{card.front}</p>
                     </div>
                     <div className="flip-card-back">
-                      <h4 className="fs-4 fw-bold">{card.backTitle}</h4>
-                      <div>{card.back}</div>
+                      <h4 className="fs-5 fw-bold">{card.title}</h4>
+                      <p className="back-desc">{card.backDescription}</p>
                       <a href={card.path} className="learn-more-btn">
                         {t("ourServicesSection.learnMore")}
                       </a>
