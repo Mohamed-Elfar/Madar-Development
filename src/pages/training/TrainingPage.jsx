@@ -1,8 +1,6 @@
 import HeroSection from "../../components/training/Hero/HeroSection";
 import TrainingIntroSection from "../../components/training/TrainingIntroSection/TrainingIntroSection";
 import TrainingProcessSection from "../../components/training/TrainingProcessSection/TrainingProcessSection";
-import TrainingBusinessLines from "../../components/TrainingBusinessLines/TrainingBusinessLines";
-import ScopeOfServices from "../../components/ScopeOfServices/ScopeOfServices";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
@@ -23,7 +21,6 @@ export default function TrainingPage() {
         <HeroSection />
         <TrainingIntroSection />
         <TrainingProcessSection />
-        {/* <TrainingBusinessLines /> */}
       </div>
     </>
   );

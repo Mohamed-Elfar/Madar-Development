@@ -15,6 +15,9 @@ import OurJourney from "./About/OurJourney";
 import Mission from "./About/Mission";
 import Services from "./OurServices/OurServices";
 import Topbar from "./Topbar/Topbar";
+import FAQ from "./FAQ/FAQ";
+import VisionMission from "./VisionMission/VisionMission";
+import IntegratedSolutions from "./IntegratedSolutions/IntegratedSolutions";
 export {
   Navbar,
   Footer,
@@ -33,4 +36,7 @@ export {
   Mission,
   Services,
   Topbar,
+  FAQ,
+  VisionMission,
+  IntegratedSolutions,
 };

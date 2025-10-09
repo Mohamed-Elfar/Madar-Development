@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Hero, Mission, OurJourney, Vision } from "../../components";
-import VisionMission from "../../components/VisionMission/VisionMission";
-import IntegratedSolutions from "../../components/IntegratedSolutions/IntegratedSolutions";
+import {
+  Hero,
+  FAQ,
+  VisionMission,
+  IntegratedSolutions,
+} from "../../components";
 
 const About = () => {
   const heroRef = useRef();
@@ -25,6 +28,7 @@ const About = () => {
       </div>
       <IntegratedSolutions />
       <VisionMission />
+      <FAQ />
     </>
   );
 };

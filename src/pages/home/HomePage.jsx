@@ -17,6 +17,10 @@ const EmpowerSection = lazy(() =>
   import("../../components/EmpowerSection/EmpowerSection")
 );
 const Services = lazy(() => import("../../components/OurServices/OurServices"));
+const LogosCarousel = lazy(() =>
+  import("../../pages/GrantOpportunities/LogosCarousel")
+);
+const FAQ = lazy(() => import("../../components/FAQ/FAQ"));
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -37,8 +41,23 @@ export default function HomePage() {
           <IntegratedSolutions />
           <VisionMission />
           <StatsSection />
-          <EmpowerSection />
+          {/* <EmpowerSection /> */}
           <Services />
+          <FAQ />
+          <LogosCarousel
+            images={[
+              "/images/charity%20logos/Abdulrahman-bin-Saleh-Al-Rajhi-and-Family-Charitable-Foundation.webp",
+              "/images/charity%20logos/Al-Ajimi-and-Family-Charitable-Foundation.webp",
+              "/images/charity%20logos/Hamad-Al-Hussaini-and-Family-charity.webp",
+              "/images/charity%20logos/Jomaih-charity.webp",
+              "/images/charity%20logos/Mohammed-bin-Abdulaziz-Al-Habib-Charitable-Foundation.webp",
+              "/images/charity%20logos/Mohammed-bin-Abdullah-Aljomaih-Charitable-Foundation.webp",
+              "/images/charity%20logos/Salem-Bin-Ahmed-Balhamer-and-Family-charity.webp",
+              "/images/charity%20logos/Salem-Bin-Mahfouz-Charitable-Foundation.webp",
+              "/images/charity%20logos/Subaie-charity.webp",
+              "/images/charity%20logos/Sulaiman-bin-Abdulaziz-Al-Rajhi-Charitable-Foundation.webp",
+            ]}
+          />
         </div>
       </Suspense>
     </>

@@ -1,13 +1,147 @@
 import TransButton from "../../TransButton";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import MySwal from "../../../swalConfig";
+import { createEmailTemplate } from "../../EmailTemplate/emailTemplate";
+import {
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+  EMAILJS_USER_ID,
+} from "../../../emailjsConfig";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
+  const [footerEmail, setFooterEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   return (
     <div>
+      {/* Newsletter / CTA above footer */}
+      <section
+        className="w-full bg-no-repeat bg-center bg-cover m-0 mt-5 h-[332px] md:h-[250px]"
+        style={{
+          backgroundImage:
+            "url('/images/Institutional-Development-Consulting.webp')",
+        }}
+        aria-label="Stay updated"
+      >
+        <div className="relative">
+          <div className="absolute inset-0 bg-black/55" aria-hidden></div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-16 h-[332px] md:h-[250px] ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div className="text-left text-white">
+                <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+                  {t(
+                    "footer.newsletter.header",
+                    "Stay updated with our latest news, promotions, and tech insights."
+                  )}
+                </h3>
+              </div>
+
+              <div className="flex justify-start md:justify-end">
+                <form
+                  className="w-full max-w-xl"
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    // basic validation
+                    if (
+                      !footerEmail ||
+                      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(footerEmail)
+                    ) {
+                      MySwal.fire({
+                        icon: "error",
+                        title:
+                          t("footer.newsletter.invalidEmail") ||
+                          "Please enter a valid email",
+                      });
+                      return;
+                    }
+
+                    setIsSubmitting(true);
+
+                    const templateParams = {
+                      formType: "Newsletter Signup",
+                      email: footerEmail,
+                      // explicitly route this newsletter to marketing
+                      to_email: "marketingmadar@madardevelopment.com",
+                    };
+
+                    const emailBody = createEmailTemplate(templateParams);
+                    const finalTemplateParams = {
+                      ...templateParams,
+                      html_message: emailBody,
+                    };
+
+                    try {
+                      await emailjs.send(
+                        EMAILJS_SERVICE_ID,
+                        EMAILJS_TEMPLATE_ID,
+                        finalTemplateParams,
+                        EMAILJS_USER_ID
+                      );
+                      MySwal.fire({
+                        icon: "success",
+                        title:
+                          t("footer.newsletter.successTitle") || "Thank you!",
+                        text:
+                          t("footer.newsletter.successText") ||
+                          "You have been subscribed.",
+                      });
+                      setFooterEmail("");
+                    } catch (err) {
+                      console.error("Newsletter send error:", err);
+                      MySwal.fire({
+                        icon: "error",
+                        title: t("footer.newsletter.errorTitle") || "Oops",
+                        text:
+                          t("footer.newsletter.errorText") ||
+                          "Something went wrong. Please try again later.",
+                      });
+                    } finally {
+                      setIsSubmitting(false);
+                    }
+                  }}
+                  aria-label="Subscribe to newsletter"
+                >
+                  <label htmlFor="footer-email" className="sr-only">
+                    {t("footer.newsletter.emailLabel", "Your email address")}
+                  </label>
+                  <div className="flex shadow-sm rounded-md overflow-hidden h-[50px] w-[100%]">
+                    <input
+                      id="footer-email"
+                      type="email"
+                      placeholder={t(
+                        "footer.newsletter.placeholder",
+                        "Your email address"
+                      )}
+                      value={footerEmail}
+                      onChange={(e) => setFooterEmail(e.target.value)}
+                      className="w-full px-4 py-3 text-gray-800 bg-white/95 focus:outline-none"
+                      required
+                      aria-label={
+                        t("footer.newsletter.emailLabel") ||
+                        "Your email address"
+                      }
+                    />
+                    <button
+                      type="submit"
+                      className="bg-[#189748] text-white px-6 py-3 font-semibold w-[50%]"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting
+                        ? t("footer.newsletter.sending") || "Sending..."
+                        : t("footer.newsletter.signUp") || "Sign up"}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer
         className="bg-[#189748]"
         role="contentinfo"
@@ -163,7 +297,7 @@ export default function Footer() {
                 ].map(({ label, href, target }, idx) => (
                   <li key={idx} className="footer-li text-white">
                     <a href={href} target={target || "_self"} rel="noreferrer">
-                      <p className="p3 hover:text-white mb-3 text-blue-100">
+                      <p className="p3 hover:text-white mb-3 text-white">
                         {label}
                       </p>
                     </a>
@@ -187,12 +321,12 @@ export default function Footer() {
               </h3>
               <ul className="cat-dropdown-menu">
                 <li>
-                  <p className="p4 leading-4 md:w-32 text-blue-100 w-full mb-3">
+                  <p className="p4 leading-4 md:w-32 text-white w-full mb-3">
                     <span className="font-GilroySemiBold">
                       {t("contact.email")}
                     </span>{" "}
                     <a
-                      className="footer-link"
+                      className="footer-linktext-white"
                       href={`mailto:${t("contact.emailValue")}`}
                     >
                       {t("contact.emailValue")}
@@ -201,17 +335,20 @@ export default function Footer() {
                 </li>
 
                 <li>
-                  <p className="p4 leading-4 md:w-44 text-blue-100 w-full mb-3">
+                  <p className="p4 leading-4 md:w-44 text-white w-full mb-3">
                     <span className="font-GilroySemiBold block">
-                      {t("contact.phone")}
+                      {t("footer.contact.phone", t("contact.phone"))}
                     </span>
                     <a
-                      className="footer-link"
-                      href={`tel:${t("contact.phoneValue")}`}
+                      className="footer-link text-white"
+                      href={`tel:${t(
+                        "footer.contact.phoneValue",
+                        t("contact.phoneValue")
+                      )}`}
                       dir="ltr"
                       style={{ textAlign: "left" }}
                     >
-                      {t("contact.phoneValue")}
+                      {t("footer.contact.phoneValue", t("contact.phoneValue"))}
                     </a>
                   </p>
                 </li>

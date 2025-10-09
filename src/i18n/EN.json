@@ -181,9 +181,26 @@
     "training": {
       "Training": "Training"
     },
+    "newsletter": {
+      "emailLabel": "Your email address",
+      "placeholder": "Your email address",
+      "header": "Stay updated with our latest news, promotions, and tech insights.",
+      "signUp": "Sign up",
+      "sending": "Sending...",
+      "invalidEmail": "Please enter a valid email",
+      "successTitle": "Thank you!",
+      "successText": "You have been subscribed.",
+      "errorTitle": "Oops",
+      "errorText": "Something went wrong. Please try again later."
+    },
+    "contact": {
+      "phone": "Tel.No",
+      "phoneValue": "+966540478767"
+    },
     "ConsulRainCo": "ConsulRain Co",
     "brandDescription": "Madar Development is an integrated consulting firm offering comprehensive logistics, financial, and management services to non-profits, startups, government and industrial organizations. Founded in September 2025, it is led by a team of expert consultants with over 20 years of experience."
   },
+
   "partners": {
     "title": "Our Partners",
     "description": "Over the years, we have proudly partnered with leading organizations across sectors, helping them reach their full potential, transform complexity into clarity, and achieve measurable, lasting impact."
@@ -256,23 +273,33 @@
       "screenshot": "screenshot.png"
     }
   },
-  "ourServices": {
-    "title": "Our Services",
-    "service1": "Supply chain & Logistics",
-    "service2": "Sales",
-    "service3": "Marketing",
-    "service4": "Compliance",
-    "service5": "Finance & Accounting",
-    "service6": "Food Safety",
-    "service7": "Information Technology",
-    "service8": "Human Resources",
-    "service9": "Quality Control",
-    "service10": "Production",
-    "service11": "Softskills",
-    "service12": "Leadership",
-    "service13": "Administration"
+  "faq": {
+    "label": "ORDER & PAYMENT",
+    "title": "Most Popular Questions",
+    "description": "Get clarity on how we collaborate with clients to deliver precision solutions. Below are answers to the most common questions about working with us:",
+    "questions": {
+      "0": {
+        "q": "How do I initiate a project with your team?",
+        "a": "Simply submit an inquiry through our contact form or call us directly. We'll schedule a free consultation to discuss requirements, scope and timelines before providing a tailored proposal."
+      },
+      "1": {
+        "q": "What payment methods do you accept?",
+        "a": "We accept bank transfers and major corporate payment methods. For international clients we can handle wire transfers and arrange invoicing in the appropriate currency."
+      },
+      "2": {
+        "q": "Can I request design changes mid-project?",
+        "a": "Yes — design iterations are part of our project lifecycle. Scope changes are managed through formal change requests to ensure timelines and costs are aligned with expectations."
+      },
+      "3": {
+        "q": "Do you offer discounts for long-term partnerships?",
+        "a": "We offer tailored pricing models and discounts for multi-year partnerships and repeat engagements. Contact our commercial team to discuss options."
+      },
+      "4": {
+        "q": "What if I encounter urgent issues during delivery?",
+        "a": "We provide escalation paths and support options for urgent matters. Critical issues are handled with priority and we maintain clear SLAs for response and resolution."
+      }
+    }
   },
-
 
   "training": {
     "heroSection": {
@@ -323,9 +350,6 @@
           "note": "Certificate on successful completion"
         }
       }
-    },
-    "trainingBusinessLines": {
-      "title": "Training Business Lines"
     }
   },
   "About": {
@@ -468,7 +492,7 @@
     },
     "learnMore": "LEARN MORE"
   },
-  
+
   "visionMission": {
     "vision": {
       "title": "Who We Are",
@@ -534,20 +558,7 @@
     "description": "With a deep understanding of today’s business dynamics, we deliver targeted solutions across key domains:",
     "services": {
       "institutionalDevelopment": "Institutional Development Consulting",
-      "projectsDivision": "Projects Division Services",
-      "supplyChain": "Supply Chain & Logistics",
-      "sales": "Sales",
-      "administration": "Administration",
-      "marketing": "Marketing",
-      "leadership": "Leadership",
-      "compliance": "Compliance",
-      "softskills": "Soft Skills",
-      "financeAccounting": "Finance & Accounting",
-      "production": "Production",
-      "foodSafety": "Food Safety",
-      "qualityControl": "Quality Control",
-      "humanResources": "Human Resources",
-      "informationTechnology": "Information Technology"
+      "projectsDivision": "Projects Division Services"
     },
     "table": {
       "service": "Service",
