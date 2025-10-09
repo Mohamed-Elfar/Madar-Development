@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  Navigate,
 } from "react-router-dom";
 
 import RootLayout from "../layout/RootLayout";
@@ -13,7 +14,7 @@ import {
   TrainingPage,
   ContactUs,
   ConsultationPage,
-  FeasibilityStudies,
+  GrantOpportunities,
 } from "../pages";
 import InstitutionalDevelopment from "../pages/institutional/InstitutionalDevelopment";
 import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
@@ -37,9 +38,13 @@ const router = createBrowserRouter(
       <Route path="institutional-development" element={<RootLayout />}>
         <Route index element={<InstitutionalDevelopment />} />
       </Route>
-      <Route path="feasibility-study" element={<RootLayout />}>
-        <Route index element={<FeasibilityStudies />} />
+      <Route path="grant-opportunities" element={<RootLayout />}>
+        <Route index element={<GrantOpportunities />} />
       </Route>
+      {/* redirect old path to new path */}
+      {/* <Route path="feasibility-study" element={<RootLayout />}>
+        <Route index element={<Navigate to="/grant-opportunities" replace />} />
+      </Route> */}
 
       {/* Catch-all route for 404 */}
 

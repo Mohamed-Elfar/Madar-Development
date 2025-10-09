@@ -168,9 +168,9 @@ const Navbar = memo(() => {
                           className={`custom-dropdown-item ${
                             active ? "bg-gray-100" : ""
                           }`}
-                          to="/feasibility-study"
+                          to="/grant-opportunities"
                         >
-                          {t("navbar.feasibilityStudies")}
+                          {t("navbar.grantOpportunities")}
                         </NavLink>
                       )}
                     </Menu.Item>
@@ -276,13 +276,13 @@ const Navbar = memo(() => {
                 <Menu.Item>
                   {({ active }) => (
                     <NavLink
-                      to="/feasibility-study"
+                      to="/grant-opportunities"
                       className={`block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-700 ${
                         active ? "bg-gray-50" : ""
                       }`}
                       onClick={toggleMobileMenu}
                     >
-                      {t("navbar.feasibilityStudies")}
+                      {t("navbar.grantOpportunities")}
                     </NavLink>
                   )}
                 </Menu.Item>

@@ -1,153 +1,31 @@
-/* Feasibility styles removed. Refer to GrantOpportunities/GrantOpportunities.css for styles.
-   This file kept as a stub to avoid accidental imports breaking older branches. */
-/* Read More Card & Modal Styles */
-.feasibility-intro-card {
-  background: #f7faff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
-  padding: 1.5rem 1rem;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-}
-.feasibility-desc-short {
-  font-size: 1.1rem;
-  color: #3a506b;
-  margin-bottom: 1rem;
-}
-.feasibility-readmore-btn {
-  background: #1a365d;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.feasibility-readmore-btn:hover {
-  background: #274472;
-}
-.feasibility-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 99vw;
-  height: 100vh;
-  background: rgba(26, 54, 93, 0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-.feasibility-modal {
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 8px 32px rgba(26, 54, 93, 0.16);
-  padding: 2rem 2rem 1.5rem 2rem;
-  max-width: 600px;
-  width: 90vw;
-  text-align: center;
-  position: relative;
-}
-.feasibility-modal-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1a365d;
-  margin-bottom: 1rem;
-}
-.feasibility-modal-desc {
-  font-size: 1.15rem;
-  color: #3a506b;
-  margin-bottom: 2rem;
-}
-.feasibility-modal-close {
-  background: #1a365d;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.feasibility-modal-close:hover {
-  background: #274472;
-}
-/* Accordion styles */
-.feasibility-accordion {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  background: #e0eafc;
-  border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
-}
-.feasibility-accordion-header {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1a365d;
-  user-select: none;
-}
-.feasibility-accordion-title {
-  flex: 1;
-}
-.feasibility-accordion-arrow {
-  font-size: 1.5rem;
-  color: #1a365d;
-  transition: transform 0.3s;
-}
-.feasibility-accordion-arrow.open {
-  transform: rotate(180deg);
-}
-.feasibility-accordion-panel {
-  padding: 0 1rem;
-  background: #f7faff;
-  border-radius: 0 0 1rem 1rem;
-}
-.feasibility-accordion-panel.open {
-  padding: 1rem;
-}
-.feasibility-hero {
+.grant-hero {
   background: #f6f6f6;
   min-height: 100vh;
-  padding: 3rem 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
-.feasibility-left {
+.grant-left {
   flex: 1 1 50%;
   padding: 2rem;
 }
-.feasibility-right {
+.grant-right {
   flex: 1 1 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.feasibility-hero-content {
+.grant-hero-content {
   max-width: 680px;
   text-align: left;
 }
-.feasibility-title {
+.grant-title {
   font-size: 3rem;
   font-weight: 800;
   color: #111827; /* near black for contrast */
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
-}
-.feasibility-desc {
-  font-size: 1.2rem;
-  color: #3a506b;
-  margin-bottom: 2rem;
-}
-.feasibility-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
 }
 
 /* Logos carousel */
@@ -198,25 +76,25 @@
 }
 
 /* Right world map */
-.feasibility-map {
+.grant-map {
   max-width: 640px;
   width: 100%;
 }
 
 @media (max-width: 900px) {
-  .feasibility-hero {
+  .grant-hero {
     flex-direction: column;
     padding: 2rem 1rem;
   }
-  .feasibility-left,
-  .feasibility-right {
+  .grant-left,
+  .grant-right {
     flex: 1 1 100%;
   }
   .logo-item {
     width: 120px;
     height: 56px;
   }
-  .feasibility-title {
+  .grant-title {
     font-size: 2rem;
   }
 }
@@ -268,7 +146,7 @@
     transform: translateX(-50%);
   }
 }
-.feasibility-card {
+.grant-card {
   background: #fff;
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
@@ -281,15 +159,15 @@
   transition: transform 0.3s, box-shadow 0.3s;
   animation: fadeInUp 0.7s ease both;
 }
-.feasibility-card:hover {
+.grant-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 8px 32px rgba(26, 54, 93, 0.16);
 }
-.feasibility-card-icon {
+.grant-card-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.feasibility-card-title {
+.grant-card-title {
   font-size: 1.3rem;
   font-weight: 600;
   color: #1a365d;
@@ -297,14 +175,14 @@
   text-align: center;
 }
 /* Card list alignment for EN/AR */
-.feasibility-card-list {
+.grant-card-list {
   list-style: disc inside;
   color: #3a506b;
   font-size: 1rem;
   text-align: left;
   padding-left: 0;
 }
-html[dir="rtl"] .feasibility-card-list {
+html[dir="rtl"] .grant-card-list {
   text-align: right;
   direction: rtl;
   padding-right: 0;
@@ -327,6 +205,60 @@ html[dir="rtl"] .feasibility-card-list {
   animation: fadeInUp 0.7s ease both;
 }
 
-html[lang="ar"] .feasibility-left {
+html[lang="ar"] .grant-left {
   direction: rtl;
+}
+
+/* Grant hero image section */
+.grant-hero-img-section {
+  position: relative;
+  height: 340px;
+}
+.grant-hero-img-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 0; /* full-bleed shouldn't have rounded corners */
+  overflow: hidden;
+}
+.grant-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+.grant-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  background-color: var(--color-brand-green, #27904f);
+  opacity: 0.55; /* semi-transparent brand overlay */
+  z-index: 2;
+}
+.grant-hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 3;
+}
+.grant-hero-title {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 900px) {
+  .grant-hero-img {
+    height: 220px;
+  }
+  .grant-hero-title {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
 }

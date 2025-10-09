@@ -182,6 +182,10 @@ html[lang="ar"] .footer-li:hover {
     text-align: center !important;
     font-size: 21px;
   }
+  .topbar{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media (min-width: 640px) {
@@ -198,6 +202,7 @@ html[lang="ar"] .footer-li:hover {
     font-size: 16px;
     font-weight: 600;
   }
+  
 }
 
 @media (min-width: 768px) {

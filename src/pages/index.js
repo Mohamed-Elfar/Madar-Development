@@ -4,7 +4,7 @@ import TrainingPage from "./training/TrainingPage";
 import About from "./about/About";
 import ContactUs from "../components/contactUs/contactUs";
 import ConsultationPage from "./Consultation/Consultation";
-import FeasibilityStudies from "./FeasibilityStudies/FeasibilityStudies";
+import GrantOpportunities from "./GrantOpportunities/GrantOpportunities";
 import InstitutionalDevelopment from "./institutional/InstitutionalDevelopment";
 export {
   HomePage,
@@ -13,6 +13,6 @@ export {
   TrainingPage,
   ContactUs,
   ConsultationPage,
-  FeasibilityStudies,
+  GrantOpportunities,
   InstitutionalDevelopment,
 };

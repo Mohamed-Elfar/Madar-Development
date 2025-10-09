@@ -118,8 +118,8 @@ export default function Footer() {
                     path: "/institutional-development",
                   },
                   {
-                    label: t("navbar.feasibilityStudies"),
-                    path: "/feasibility-study",
+                    label: t("navbar.grantOpportunities"),
+                    path: "/grant-opportunities",
                   },
                 ].map(({ label, path }, index) => (
                   <li key={index} className="footer-li text-white">

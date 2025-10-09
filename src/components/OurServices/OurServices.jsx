@@ -24,18 +24,18 @@ const OurServices = () => {
     },
     {
       icon: <i className="fas fa-file-signature" aria-hidden="true"></i>,
-      title: t("ourServicesSection.cards.feasibilityStudies.title"),
-      front: t("ourServicesSection.cards.feasibilityStudies.front"),
-      backTitle: t("ourServicesSection.cards.feasibilityStudies.backTitle"),
+      title: t("ourServicesSection.cards.grantOpportunities.title"),
+      front: t("ourServicesSection.cards.grantOpportunities.front"),
+      backTitle: t("ourServicesSection.cards.grantOpportunities.backTitle"),
       back: (
         <ul
           style={{ textAlign: "left", paddingLeft: "1.2em", marginBottom: 0 }}
         >
-          <li>{t("ourServicesSection.cards.feasibilityStudies.back.item1")}</li>
-          <li>{t("ourServicesSection.cards.feasibilityStudies.back.item2")}</li>
+          <li>{t("ourServicesSection.cards.grantOpportunities.back.item1")}</li>
+          <li>{t("ourServicesSection.cards.grantOpportunities.back.item2")}</li>
         </ul>
       ),
-      path: "/feasibility-study",
+      path: "/grant-opportunities",
     },
   ];
 

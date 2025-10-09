@@ -25,7 +25,7 @@
     "training": "Training",
     "ourServices": "Our Services",
     "consultation": "Consulting",
-    "feasibilityStudies": "Feasibility Studies"
+    "grantOpportunities": "Grant Opportunities"
   },
   "home": {
     "pageTitle": "Welcome to the Home Page"
@@ -330,64 +330,24 @@
   "About": {
     "title": "About us"
   },
-  "feasibility": {
-    "title": "Feasibility Studies",
-    "intro": "We are dedicated to providing comprehensive feasibility studies that empower businesses, investors, and entrepreneurs to make well-informed decisions. Our studies comprehensively evaluate the viability of projects across diverse sectors, seamlessly integrating market intelligence, financial analysis, and technical assessments to ensure strategic clarity and effective risk management.\nWhether you are embarking on a new venture, expanding your operations, or exploring investment opportunities, our feasibility studies furnish the invaluable insights required to proceed with confidence and assurance.",
-    "showIntro": "Show More",
-    "hideIntro": "Show Less",
-    "services": {
-      "market": {
-        "title": "Market Feasibility",
-        "items": [
-          "Market demand analysis",
-          "Competitive landscape evaluation",
-          "Customer segmentation and behavior analysis",
-          "Pricing strategy recommendations"
-        ]
-      },
-      "technical": {
-        "title": "Technical Feasibility",
-        "items": [
-          "Site and location analysis",
-          "Technology and infrastructure requirements assessment",
-          "Operational workflow design evaluation",
-          "Resource availability and logistics assessment"
-        ]
-      },
-      "financial": {
-        "title": "Financial Feasibility",
-        "items": [
-          "Capital investment estimation",
-          "Revenue and cost projections",
-          "Break-even analysis",
-          "ROI and NPV calculations"
-        ]
-      },
-      "legal": {
-        "title": "Legal and Regulatory Feasibility",
-        "items": [
-          "Compliance with local and international regulations",
-          "Licensing and permit requirements assessment",
-          "Environmental impact assessments"
-        ]
-      },
-      "organizational": {
-        "title": "Organizational Feasibility",
-        "items": [
-          "Human resource planning",
-          "Management structure evaluation",
-          "Strategic alignment with business goals"
-        ]
-      },
-      "risk": {
-        "title": "Risk Assessment and Mitigation",
-        "items": [
-          "SWOT analysis",
-          "Risk identification and prioritization",
-          "Contingency planning"
-        ]
-      }
-    }
+  "grant": {
+    "title": "Grant Opportunities",
+    "intro": "We are dedicated to providing a curated list of grant opportunities and donor institutions supporting financial sustainability. This section highlights institutions that fund programs related to financial sustainability and community development.",
+    "metaDescription": "List of donor institutions and grant opportunities supporting financial sustainability and related programs.",
+    "sectionTitle": "Donor institutions supporting financial sustainability:",
+
+    "donors": [
+      "Abdullah Al-Subaie Charitable Foundation",
+      "Al Jomaih Charitable Foundation",
+      "Hamad Al Hussaini and Family Charitable Foundation",
+      "Salem Bin Ahmed Balhamer and Family Charitable Foundation",
+      "Salem Bin Mahfouz Charitable Foundation",
+      "Sulaiman bin Abdulaziz Al-Rajhi Charitable Foundation",
+      "Abdulrahman bin Saleh Al-Rajhi and Family Charitable Foundation",
+      "Abdulaziz & Mohammed Al-Ajimi and Family Charitable Foundation",
+      "Mohammed bin Abdulaziz Al-Habib Charitable Foundation",
+      "Mohammed bin Abdullah Aljomaih Charitable Foundation"
+    ]
   },
   "consultation": {
     "title": "Consulting Services",
@@ -476,8 +436,8 @@
         "backTitle": "Strategic Consultation Process",
         "back": "In-depth analysis, collaborative planning, and actionable recommendations to help your organization overcome obstacles and achieve long-term growth."
       },
-      "feasibilityStudies": {
-        "title": "Feasibility Studies",
+      "grantOpportunities": {
+        "title": "Grant Opportunities",
         "front": "Comprehensive studies to help you make well-informed business decisions",
         "backTitle": "Key Services Offered",
         "back": {
