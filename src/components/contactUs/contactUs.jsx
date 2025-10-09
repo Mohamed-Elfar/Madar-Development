@@ -10,7 +10,7 @@ import {
   EMAILJS_USER_ID,
   EMAILJS_TO_EMAIL,
 } from "../../emailjsConfig";
-import headerBg from "../../assets/contact-header-bg.webp";
+import headerBg from "/images/hero/contact-header-bg.webp";
 // social icons are provided by SocialFooter
 import "./contact.css";
 

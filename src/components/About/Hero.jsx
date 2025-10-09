@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         className="relative min-h-[50vh] flex items-center justify-center "
         style={{
-          backgroundImage: 'url("./images/aboutHero.webp")',
+          backgroundImage: 'url("/images/hero/aboutHero.webp")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
