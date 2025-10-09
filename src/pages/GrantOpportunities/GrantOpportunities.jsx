@@ -113,7 +113,11 @@ export default function GrantOpportunities() {
         </div>
 
         <div className="grant-right">
-          <img className="grant-map" src="/images/map.png" alt="world map" />
+          <img
+            className="grant-map"
+            src="/images/marked-map.webp"
+            alt="world map"
+          />
         </div>
       </div>
     </>

@@ -123,7 +123,7 @@ export default function ContactUs() {
           aria-hidden="true"
         ></div>
         <h1
-          className="text-white text-3xl md:text-4xl font-bold z-10 text-center"
+          className="contact-hero-title text-white text-3xl md:text-4xl font-bold z-10 text-center"
           style={{ position: "relative" }}
         >
           {t("contact.header", "Contact Us")}

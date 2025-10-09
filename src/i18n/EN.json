@@ -355,7 +355,16 @@
     "showIntro": "Read More",
     "hideIntro": "Close",
     "scopeTitle": "Scope of Services",
-    "features": {},
+    "features": {
+      "0": {
+        "title": "Experienced Professionals",
+        "desc": "All projects are led by highly experienced consultants and passionate teams delivering high-quality solutions."
+      },
+      "1": {
+        "title": "Dedicated 24/7 Support",
+        "desc": "Field coordination and model-driven supervision to ensure successful project implementation."
+      }
+    },
     "points": {
       "0": "Specialized technical, financial and administrative consultancy across sectors.",
       "1": "Training programs and capacity building to develop teams and enhance competencies.",
@@ -636,6 +645,7 @@
       },
       "projectsDivision": {
         "title": "Projects Division Services",
+        "sectionTitle": "Projects Division Services",
         "items": [
           {
             "title": "Write and design project proposals for donors",

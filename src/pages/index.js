@@ -6,6 +6,8 @@ import ContactUs from "../components/contactUs/contactUs";
 import ConsultationPage from "./Consultation/Consultation";
 import GrantOpportunities from "./GrantOpportunities/GrantOpportunities";
 import InstitutionalDevelopment from "./institutional/InstitutionalDevelopment";
+import ProjectsDivision from "./ProjectsDivision/ProjectsDivision";
+
 export {
   HomePage,
   SplashPage,
@@ -15,4 +17,5 @@ export {
   ConsultationPage,
   GrantOpportunities,
   InstitutionalDevelopment,
+  ProjectsDivision,
 };

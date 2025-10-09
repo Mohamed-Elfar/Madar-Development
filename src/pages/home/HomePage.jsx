@@ -17,12 +17,6 @@ const EmpowerSection = lazy(() =>
   import("../../components/EmpowerSection/EmpowerSection")
 );
 const Services = lazy(() => import("../../components/OurServices/OurServices"));
-const Founders = lazy(() =>
-  import("../../components/foundersSection/Founders")
-);
-const OurPartners = lazy(() =>
-  import("../../components/PartnersSection/OurPartners")
-);
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -45,8 +39,6 @@ export default function HomePage() {
           <StatsSection />
           <EmpowerSection />
           <Services />
-          {/* <Founders />
-          <OurPartners /> */}
         </div>
       </Suspense>
     </>

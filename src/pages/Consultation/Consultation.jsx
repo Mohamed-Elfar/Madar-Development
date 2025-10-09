@@ -215,7 +215,7 @@ export default function Consultation() {
               </div>
             </div>
 
-            {/*
+            
             <div className="consultation-feature-list">
               <div className="consultation-feature-item">
                 <FontAwesomeIcon
@@ -246,7 +246,7 @@ export default function Consultation() {
                 </div>
               </div>
             </div>
-            */}
+           
           </div>
 
           {/* Right Side Image */}
@@ -285,7 +285,7 @@ export default function Consultation() {
           </div>
         </div>
       </div>
-      <ScopeOfServices />
+      <ScopeOfServices hideProjectsDivision={true} />
 
       {/* Dark Contact Section */}
       <div className="consultation-contact-dark-wrapper">

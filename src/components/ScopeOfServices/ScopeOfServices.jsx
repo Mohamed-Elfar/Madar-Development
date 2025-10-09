@@ -6,7 +6,7 @@ import ServiceModal from "../ServiceModal/ServiceModal"; // Import the modal
 import SubscribeModal from "../SubscribeModal/SubscribeModal";
 import "./ScopeOfServices.css"; // Import the new CSS
 
-const ScopeOfServices = () => {
+const ScopeOfServices = ({ hideProjectsDivision = false }) => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === "rtl";
   const [selectedService, setSelectedService] = useState(null);
@@ -20,7 +20,10 @@ const ScopeOfServices = () => {
     return t.endsWith(".") ? t : `${t}.`;
   };
 
-  const serviceKeys = ["institutionalDevelopment", "projectsDivision"];
+  // Build service keys; allow caller to hide projectsDivision when embedding in other pages
+  const serviceKeys = ["institutionalDevelopment"].concat(
+    hideProjectsDivision ? [] : ["projectsDivision"]
+  );
 
   const handleServiceClick = (key) => {
     setSelectedService(key);

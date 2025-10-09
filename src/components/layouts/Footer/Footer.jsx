@@ -1,5 +1,4 @@
 import TransButton from "../../TransButton";
-import SocialFooter from "./SocialFooter";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
@@ -120,6 +119,10 @@ export default function Footer() {
                   {
                     label: t("navbar.grantOpportunities"),
                     path: "/grant-opportunities",
+                  },
+                  {
+                    label: t("scopeOfServices.services.projectsDivision"),
+                    path: "/projects-division",
                   },
                 ].map(({ label, path }, index) => (
                   <li key={index} className="footer-li text-white">

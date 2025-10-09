@@ -9,7 +9,7 @@
     width: 100%;
     max-width: 100%;
     min-width: unset;
-    height: 340px;
+    height: 440;
   }
   .consultation-contact-dark-content {
     gap: 1.2rem;
@@ -45,7 +45,7 @@
   .consultation-intro-imgbox {
     max-width: 100%;
     min-width: unset;
-    height: 320px;
+    height: 400px !important;
   }
   .consultation-intro-img-overlay {
     flex-direction: column;
@@ -146,6 +146,7 @@
 .consultation-intro-right {
   flex: 2;
   min-width: 320px;
+
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -154,7 +155,7 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 440px;
+  height: 660px;
   border-radius: 1.2rem;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
@@ -375,105 +376,6 @@
   gap: 0.7rem;
 }
 /* Sectioned Redesign Below Hero */
-.consultation-sectioned-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-.consultation-intro-section {
-  background: #f7faff;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-.consultation-intro-text {
-  font-size: 1.25rem;
-  color: #274472;
-  margin: 0;
-}
-.consultation-services-scroll {
-  margin-top: 1rem;
-}
-.consultation-services-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a365d;
-  margin-bottom: 1.2rem;
-  text-align: left;
-}
-.consultation-services-cards-scroll {
-  display: flex;
-  gap: 1.2rem;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
-}
-.consultation-service-card {
-  min-width: 200px;
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
-  padding: 1.5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeInUp 0.7s ease both;
-}
-.consultation-service-icon {
-  font-size: 2rem;
-  color: #1a365d;
-  margin-bottom: 0.7rem;
-}
-.consultation-service-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #274472;
-  text-align: center;
-}
-.consultation-contact-cta-card {
-  background: #e0eafc;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 2rem auto 0 auto;
-}
-.consultation-contact-cta-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #1a365d;
-  margin-bottom: 0.5rem;
-}
-.consultation-contact-cta-card p {
-  font-size: 1rem;
-  color: #274472;
-  margin-bottom: 1.2rem;
-}
-.consultation-contact-btn {
-  background: #1a365d;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.consultation-contact-btn:hover {
-  background: #274472;
-}
 /* Hero Image Section for Consultation */
 
 .consultation-hero-img-section {
@@ -528,123 +430,5 @@
   text-shadow: 0 2px 12px rgba(26, 54, 93, 0.18);
 }
 
-/* Modern Consultation Page Redesign */
-.consultation-modern-wrapper {
-  background: linear-gradient(120deg, #f7fafc 0%, #e0eafc 100%);
-  min-height: 100vh;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.consultation-modern-hero {
-  max-width: 900px;
-  text-align: left;
-  margin-bottom: 2.5rem;
-}
-.consultation-modern-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #1a365d;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-.consultation-modern-desc {
-  font-size: 1.25rem;
-  color: #274472;
-  margin-bottom: 1.5rem;
-}
-.consultation-modern-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-}
-.consultation-modern-services {
-  flex: 2;
-}
-.consultation-modern-subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a365d;
-  margin-bottom: 1.2rem;
-}
-.consultation-modern-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-.consultation-modern-card {
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(26, 54, 93, 0.08);
-  padding: 2rem 1.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeInUp 0.7s ease both;
-}
-.consultation-modern-icon {
-  font-size: 2.2rem;
-  color: #1a365d;
-  margin-bottom: 0.7rem;
-}
-.consultation-modern-card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #274472;
-  text-align: center;
-}
-.consultation-modern-cta {
-  flex: 1;
-  background: #e0eafc;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.07);
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  min-width: 260px;
-  max-width: 350px;
-  margin-top: 1.5rem;
-}
-.consultation-modern-cta h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1a365d;
-  margin-bottom: 0.5rem;
-}
-.consultation-modern-cta p {
-  font-size: 1rem;
-  color: #274472;
-  margin-bottom: 1.2rem;
-}
-.consultation-modern-contact-btn {
-  background: #1a365d;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.consultation-modern-contact-btn:hover {
-  background: #274472;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Sectioned Redesign Below Hero - removed unused selectors to keep CSS minimal. */
+/* Modern Consultation Page Redesign - removed unused selectors to keep CSS minimal. */
