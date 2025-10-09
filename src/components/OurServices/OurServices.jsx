@@ -70,7 +70,13 @@ const OurServices = () => {
                     <div className="flip-card-back">
                       <h4 className="fs-5 fw-bold">{card.title}</h4>
                       <p className="back-desc">{card.backDescription}</p>
-                      <a href={card.path} className="learn-more-btn">
+                      <a
+                        href={card.path}
+                        className="learn-more-btn"
+                        aria-label={`${card.title} - ${t(
+                          "ourServicesSection.learnMore"
+                        )}`}
+                      >
                         {t("ourServicesSection.learnMore")}
                       </a>
                     </div>

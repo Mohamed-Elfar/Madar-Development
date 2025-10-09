@@ -13,9 +13,10 @@ export default function Topbar() {
       label: "Facebook",
     },
     {
-      iconClass: "fab fa-snapchat-ghost",
-      url: "https://snapchat.com",
-      label: "Snapchat",
+      iconClass: "fab fa-x-twitter",
+      // Use Twitter/X official url
+      url: "https://x.com",
+      label: "X",
     },
     {
       iconClass: "fab fa-linkedin-in",

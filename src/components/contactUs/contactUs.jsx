@@ -174,8 +174,8 @@ export default function ContactUs() {
 
             <ul className="contact-list">
               <li className="contact-item" data-aos="fade-up">
-                <div className="icon-square">
-                  <i className="fas fa-map-marker-alt"></i>
+                <div className="icon-square" aria-hidden="true">
+                  <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
                 </div>
                 <div className="contact-item-body">
                   <div className="contact-item-title">
@@ -188,8 +188,8 @@ export default function ContactUs() {
               </li>
 
               <li className="contact-item" data-aos="fade-up">
-                <div className="icon-square">
-                  <i className="fas fa-phone"></i>
+                <div className="icon-square" aria-hidden="true">
+                  <i className="fas fa-phone" aria-hidden="true"></i>
                 </div>
                 <div className="contact-item-body">
                   <div className="contact-item-title">
@@ -209,8 +209,8 @@ export default function ContactUs() {
               </li>
 
               <li className="contact-item" data-aos="fade-up">
-                <div className="icon-square">
-                  <i className="fas fa-envelope"></i>
+                <div className="icon-square" aria-hidden="true">
+                  <i className="fas fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div className="contact-item-body">
                   <div className="contact-item-title">
@@ -231,8 +231,8 @@ export default function ContactUs() {
               </li>
 
               <li className="contact-item" data-aos="fade-up">
-                <div className="icon-square">
-                  <i className="fab fa-facebook-f"></i>
+                <div className="icon-square" aria-hidden="true">
+                  <i className="fab fa-facebook-f" aria-hidden="true"></i>
                 </div>
                 <div className="contact-item-body">
                   <div className="contact-item-title">

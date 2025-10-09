@@ -27,7 +27,7 @@ const ServiceModal = ({ isOpen, onClose, title, children, onSubscribe }) => {
             className="service-modal-close-btn"
             aria-label="Close modal"
           >
-            <i className="fas fa-times"></i>
+            <i className="fas fa-times" aria-hidden="true"></i>
           </button>
         </div>
         <div className="service-modal-body">{children}</div>

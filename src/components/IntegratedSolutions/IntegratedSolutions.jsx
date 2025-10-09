@@ -44,7 +44,7 @@ const IntegratedSolutions = () => {
                 alt={t("integratedSolutions.imageAlt")}
                 loading="lazy"
               />
-              <div className="overlay">
+              <div className="overlay" aria-hidden="true">
                 <div className="experience mx-auto text-center">
                   <h3>20+</h3>
                   <p>{t("integratedSolutions.experience")}</p>

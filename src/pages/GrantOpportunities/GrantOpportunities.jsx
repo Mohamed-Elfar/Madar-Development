@@ -117,6 +117,7 @@ export default function GrantOpportunities() {
             className="grant-map"
             src="/images/marked-map.webp"
             alt="world map"
+            loading="lazy"
           />
         </div>
       </div>

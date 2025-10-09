@@ -192,9 +192,9 @@ export default function Footer() {
                       icon: "fab fa-facebook-f",
                     },
                     {
-                      href: "https://snapchat.com",
-                      label: "Snapchat",
-                      icon: "fab fa-snapchat-ghost",
+                      href: "https://x.com",
+                      label: "X",
+                      icon: "fab fa-x-twitter",
                     },
                     {
                       href: "https://linkedin.com",

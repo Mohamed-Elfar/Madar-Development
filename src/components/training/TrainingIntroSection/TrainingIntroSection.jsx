@@ -18,6 +18,7 @@ export default function TrainingIntroSection() {
             src="/images/training-heroimage1.webp"
             alt="training hero 1"
             className="training-img rounded-lg"
+            loading="lazy"
           />
         </div>
         {/* LEFT: title + description + two-column list */}

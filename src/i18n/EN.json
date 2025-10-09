@@ -263,7 +263,7 @@
     "topbar": {
       "social": {
         "facebook": "Follow us on Facebook",
-        "snapchat": "Follow us on Snapchat",
+        "snapchat": "Follow us on X",
         "linkedin": "Follow us on LinkedIn",
         "tiktok": "Follow us on TikTok",
         "instagram": "Follow us on Instagram"
@@ -433,7 +433,7 @@
         "0": "Google",
         "1": "Facebook",
         "2": "LinkedIn",
-        "3": "SnapChat",
+        "3": "X",
         "4": "Instagram",
         "5": "TikTok",
         "6": "Other"

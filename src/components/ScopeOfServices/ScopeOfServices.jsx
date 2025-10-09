@@ -306,6 +306,7 @@ const ScopeOfServices = ({ hideProjectsDivision = false }) => {
               src={Illustration}
               alt={t("scopeOfServices.imageAlt")}
               className="scope-image"
+              loading="lazy"
             />
             {/* pricingPanel was removed in favor of showing prices inside the ServiceModal */}
           </div>

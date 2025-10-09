@@ -200,8 +200,11 @@ export default function FeedbackWidget() {
           onMouseLeave={(e) =>
             (e.currentTarget.style.backgroundColor = "var(--color-primary-900)")
           }
+          aria-expanded={isOpen}
+          aria-controls="feedback-panel"
+          aria-label={t("feedback.buttonAria", "Open feedback panel")}
         >
-          <span>💬</span>
+          <span aria-hidden="true">💬</span>
           <span className="font-medium">{t("feedback.button")}</span>
         </button>
       </div>
@@ -221,6 +224,7 @@ export default function FeedbackWidget() {
                   <button
                     onClick={() => setIsOpen(false)}
                     className="text-gray-400 hover:text-white"
+                    aria-label={t("feedback.close", "Close feedback panel")}
                   >
                     ✕
                   </button>

@@ -83,7 +83,7 @@ export default function LogosCarousel({ images = [] }) {
           return (
             <SwiperSlide key={i} className="logo-slide">
               <div className={`logo-item ${isSubaie ? "subaie" : ""}`}>
-                <img src={src} alt={`partner-${i}`} />
+                <img src={src} alt={`partner logo ${i + 1}`} loading="lazy" />
                 {i === 7 && (
                   <div className="partner-overlay" aria-hidden="true" />
                 )}
