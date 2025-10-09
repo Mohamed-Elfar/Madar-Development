@@ -45,7 +45,7 @@ const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:site" content="@consulrain" />
+      <meta name="twitter:site" content="@madardevelopment" />
 
       {/* Additional Meta Tags */}
       <meta name="theme-color" content="#189748" />
@@ -56,7 +56,8 @@ const SEO = ({
       <link rel="canonical" href={url} />
 
       {/* Language */}
-      <meta property="og:locale" content="ar_AR" />
+      <meta property="og:locale" content="en_US" />
+      <link rel="alternate" href="/ar" hrefLang="ar" />
 
       {/* Robots */}
       <meta name="robots" content="index, follow" />
@@ -76,8 +77,8 @@ const SEO = ({
             contactType: "Customer Service",
           },
           sameAs: [
-            "https://linkedin.com/company/consulrain",
-            "https://twitter.com/consulrain",
+            "https://linkedin.com/company/madar-development",
+            "https://twitter.com/madar_development",
           ],
         })}
       </script>

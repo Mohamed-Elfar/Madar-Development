@@ -30,7 +30,7 @@ export default function HomePage() {
         </title>
         <meta
           name="description"
-          content="ConsulRain drives business growth through expert consulting and targeted training in management, finance, and operations."
+          content="Madar Development provides consulting, training and institutional capacity-building in operations, finance and leadership for nonprofits, SMEs, government and industry."
         />
       </Helmet>
       <Suspense fallback={<div>Loading...</div>}>

@@ -24,7 +24,7 @@ export default function SplashPage() {
         <div className="logo-container">
           <img
             src={logoImage}
-            alt="ConsulRain Logo"
+            alt="MADAR DEVELOPMENT Logo"
             className="spinning-logo"
             loading="lazy"
           />

@@ -98,7 +98,7 @@ export default function ContactUs() {
           name="description"
           content={t(
             "contact.metaDescription",
-            "Contact MADAR DEVELOPMENT for business inquiries, support, or partnership opportunities."
+            "Contact MADAR DEVELOPMENT for consulting, training, partnership, grant support, or general inquiries. Reach our Riyadh office or send us a message to discuss how we can help your organisation."
           )}
         />
       </Helmet>
@@ -249,7 +249,7 @@ export default function ContactUs() {
             <div className="social-icons compact mt-4">
               {[
                 {
-                  href: "https://instagram.com/consulrain",
+                  href: "https://instagram.com/madar_development",
                   icon: "fab fa-instagram",
                   label: "Instagram",
                 },
@@ -264,12 +264,12 @@ export default function ContactUs() {
                   label: "X",
                 },
                 {
-                  href: "https://facebook.com/consulrain",
+                  href: "https://facebook.com/madar_development",
                   icon: "fab fa-facebook-f",
                   label: "Facebook",
                 },
                 {
-                  href: "https://www.linkedin.com/company/consulrain",
+                  href: "https://www.linkedin.com/company/madar-development",
                   icon: "fab fa-linkedin-in",
                   label: "LinkedIn",
                 },

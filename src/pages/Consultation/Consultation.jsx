@@ -100,9 +100,9 @@ export default function Consultation() {
         </title>
         <meta
           name="description"
-          content={`Request expert ${t("consultation.title")} from ${t(
+          content={`Request expert consulting from ${t(
             "brandName"
-          )} for management, finance, and operations solutions.`}
+          )} in management, finance, institutional development, and operational excellence. Tailored solutions for nonprofits, SMEs and government.`}
         />
       </Helmet>
       {/* Hero Section */}
@@ -215,7 +215,6 @@ export default function Consultation() {
               </div>
             </div>
 
-            
             <div className="consultation-feature-list">
               <div className="consultation-feature-item">
                 <FontAwesomeIcon
@@ -246,7 +245,6 @@ export default function Consultation() {
                 </div>
               </div>
             </div>
-           
           </div>
 
           {/* Right Side Image */}

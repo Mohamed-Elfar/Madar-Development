@@ -124,10 +124,10 @@ export default function ProjectsDivision() {
         </title>
         <meta
           name="description"
-          content={
-            t("projectsDivision.metaDescription") ||
-            t("institutional.metaDescription")
-          }
+          content={t("projectsDivision.metaDescription", {
+            defaultValue:
+              "Proposal writing, project management, monitoring & evaluation, project closure and project unit services to support funded programs and ensure sustainable delivery.",
+          })}
         />
       </Helmet>
 

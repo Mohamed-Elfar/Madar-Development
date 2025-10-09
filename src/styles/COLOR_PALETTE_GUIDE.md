@@ -1,4 +1,4 @@
-# ConsulRain.ai Brand Color Palette
+# MADAR DEVELOPMENT Brand Color Palette
 
 This color palette is extracted from your logo and provides a harmonious set of colors that maintain brand consistency throughout your application.
 
@@ -155,4 +155,4 @@ Your logo colors convey:
 - **Teal**: Balance, sophistication, clarity, innovation
 - **Gray**: Reliability, neutrality, timelessness, foundation
 
-This palette reinforces ConsulRain.ai's positioning as a trustworthy, professional, and innovative consulting platform.
+This palette reinforces MADAR DEVELOPMENT's positioning as a trustworthy, professional, and innovative consulting platform.

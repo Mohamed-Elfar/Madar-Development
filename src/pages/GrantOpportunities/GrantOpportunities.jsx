@@ -17,7 +17,7 @@ export default function GrantOpportunities() {
           name="description"
           content={t(
             "grant.metaDescription",
-            "فرص المنح المالية والمتبرعين والداعمين للبرامج المتعلقة بالاستدامة المالية."
+            "Curated list of donor institutions and grant opportunities that support financial sustainability, community projects and nonprofit program funding."
           )}
         />
       </Helmet>

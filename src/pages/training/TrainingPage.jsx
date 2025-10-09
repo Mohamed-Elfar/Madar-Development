@@ -14,7 +14,7 @@ export default function TrainingPage() {
         </title>
         <meta
           name="description"
-          content="Discover ConsulRain's training programs, business lines, and our process for empowering your team."
+          content="Hands-on training programs: Training of Trainers, Project Management, Fundraising, Financial Management, Technical Reporting — designed for nonprofits, public sector and private organisations."
         />
       </Helmet>
       <div>

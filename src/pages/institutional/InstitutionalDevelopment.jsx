@@ -18,7 +18,13 @@ export default function InstitutionalDevelopment() {
         <title>
           {t("institutional.title")} | {t("brandName")}
         </title>
-        <meta name="description" content={t("institutional.metaDescription")} />
+        <meta
+          name="description"
+          content={t(
+            "institutional.metaDescription",
+            "Institutional development consulting: governance, strategic planning, policies, and capacity building to strengthen organizational performance."
+          )}
+        />
       </Helmet>
 
       <div className="institutional-hero">

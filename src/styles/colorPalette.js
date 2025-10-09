@@ -1,4 +1,4 @@
-// Color Palette extracted from ConsulRain.ai Logo
+// Color Palette for MADAR DEVELOPMENT
 // These colors work harmoniously together and maintain brand consistency
 
 export const colorPalette = {
@@ -8,9 +8,9 @@ export const colorPalette = {
     greenDark: "#115E32",
     greenBase: "#189748",
     greenLight: "#66D397",
-    teal: "#4A8B8B", // kept for legacy reference (can be removed)
-    darkTeal: "#3A7070", // legacy
-    lightTeal: "#5BA0A0", // legacy
+    teal: "#4A8B8B",
+    darkTeal: "#3A7070",
+    lightTeal: "#5BA0A0",
   },
 
   // Neutral Colors (grays from logo)

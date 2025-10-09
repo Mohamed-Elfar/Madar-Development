@@ -20,7 +20,7 @@ const About = () => {
         </title>
         <meta
           name="description"
-          content="Learn more about ConsulRain, our mission, vision, and integrated solutions for your business growth."
+          content="Learn about MADAR DEVELOPMENT's mission, founders, and integrated consulting and training services that deliver measurable organizational impact."
         />
       </Helmet>
       <div ref={heroRef}>

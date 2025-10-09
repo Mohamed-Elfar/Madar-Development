@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         </title>
         <meta
           name="description"
-          content="Read ConsulRain's privacy policy to learn how we protect your data and respect your privacy."
+          content="Read MADAR DEVELOPMENT's privacy policy to learn how we collect, use, and protect personal and organizational data when you interact with our services and website."
         />
       </Helmet>
       <main

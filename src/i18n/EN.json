@@ -197,7 +197,7 @@
       "phone": "Tel.No",
       "phoneValue": "+966540478767"
     },
-    "ConsulRainCo": "ConsulRain Co",
+    "brandCompany": "MADAR DEVELOPMENT",
     "brandDescription": "Madar Development is an integrated consulting firm offering comprehensive logistics, financial, and management services to non-profits, startups, government and industrial organizations. Founded in September 2025, it is led by a team of expert consultants with over 20 years of experience."
   },
 
@@ -255,7 +255,7 @@
     "fileTooLargeTitle": "File Too Large",
     "fileTooLargeText": "File size must be less than 500KB",
     "screenshotPermission": {
-      "title": "Allow ConsulRain.ai to see this tab?",
+      "title": "Allow MADAR DEVELOPMENT to see this tab?",
       "description": "The site will be able to see the contents of this tab",
       "cancel": "Cancel",
       "allow": "Allow"
@@ -428,7 +428,7 @@
         "2": "Operations improvement",
         "3": "Other"
       },
-      "referralLabel": "How did you hear about ConsulRain?",
+      "referralLabel": "How did you hear about MADAR DEVELOPMENT?",
       "referralOptions": {
         "0": "Google",
         "1": "Facebook",
