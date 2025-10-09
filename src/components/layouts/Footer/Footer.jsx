@@ -23,7 +23,7 @@ export default function Footer() {
           <div
             className={`w-full max-w-7xl px-4 sm:px-6 lg:!px-0 ${
               isArabic ? "sm:pe-20" : "sm:ps-20"
-            } pb-4 flex gap-6 sm:gap-4 md:gap-16 lg:gap-16 xl:gap-32 items-start md:items-baseline flex-col sm:flex-row content-around justify-between`}
+            } pb-4 flex gap-6 sm:gap-4 md:gap-16 lg:gap-16 xl:gap-20 items-start md:items-baseline flex-col sm:flex-row content-around justify-between`}
           >
             {/* Brand Section */}
             <div
@@ -41,7 +41,7 @@ export default function Footer() {
                   />
                 </div>
               </div>
-              <p className="text-white mb-4 max-w-xs">
+              <p className="text-white max-w-xs text-justify hyphens-auto">
                 {t("footer.brandDescription")}
               </p>
               {/* Social Media Icons */}
@@ -53,27 +53,27 @@ export default function Footer() {
                 <div className="flex gap-2 mt-2">
                   {[
                     {
-                      href: "https://facebook.com/consulrain",
+                      href: "https://facebook.com",
                       label: "Facebook",
                       icon: "fab fa-facebook-f",
                     },
                     {
-                      href: "https://snapchat.com/add/consulrain",
+                      href: "https://snapchat.com",
                       label: "Snapchat",
                       icon: "fab fa-snapchat-ghost",
                     },
                     {
-                      href: "https://linkedin.com/company/consulrain",
+                      href: "https://linkedin.com",
                       label: "LinkedIn",
                       icon: "fab fa-linkedin-in",
                     },
                     {
-                      href: "https://tiktok.com/@consulrain",
+                      href: "https://tiktok.com",
                       label: "TikTok",
                       icon: "fab fa-tiktok",
                     },
                     {
-                      href: "https://instagram.com/consulrain",
+                      href: "https://instagram.com",
                       label: "Instagram",
                       icon: "fab fa-instagram",
                     },

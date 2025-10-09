@@ -9,6 +9,7 @@
 .grant-left {
   flex: 1 1 50%;
   padding: 2rem;
+  width: 100%;
 }
 .grant-right {
   flex: 1 1 50%;
@@ -97,6 +98,19 @@
   .grant-title {
     font-size: 2rem;
   }
+  .grant-left {
+    padding: 0;
+  }
+  .grant-left ul{
+    padding: 0;
+  }
+  .donor-text{
+    font-size: 16px;
+  }
+  .grant-hero-img-section {
+    position: relative;
+    height: 218px !important;
+}
 }
 
 .logo-item.active {

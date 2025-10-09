@@ -179,7 +179,7 @@ nav {
 }
 
 .logo:hover .brand-tagline {
-  color: #115E32;
+  color: #115e32;
   transition: color 0.3s ease 0.3s;
 }
 
@@ -243,25 +243,51 @@ nav {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .brand-name {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   .brand-tagline {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
   }
 }
 
+/* Show the brand name beside the logo on small screens; hide the tagline to save space */
 @media (max-width: 768px) {
   .company-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  /* Hide the tagline on mobile to keep the header compact */
+  .brand-tagline {
     display: none;
+  }
+
+  /* Reduce logo size on small screens */
+  .logo img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  nav {
+    margin-top: 35px;
   }
 }
 
-@media (max-width: 640px) {
-  .company-brand {
-    display: none;
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 0.95rem;
   }
-  nav {
-    margin-top: 35px;
+
+  .logo img {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
