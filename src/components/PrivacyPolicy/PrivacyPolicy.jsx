@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import SEO from "../SEO/SEO";
 import "./PrivacyPolicy.css";
 import { useTranslation } from "react-i18next";
 
@@ -9,15 +9,15 @@ export default function PrivacyPolicy() {
   const NAVBAR_HEIGHT = 150; // px - offset so headings are visible below fixed navbar
   return (
     <>
-      <Helmet>
-        <title>
-          {t("privacyPolicy.title", "Privacy Policy")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content="Read MADAR DEVELOPMENT's privacy policy to learn how we collect, use, and protect personal and organizational data when you interact with our services and website."
-        />
-      </Helmet>
+      <SEO
+        title={`${t("privacyPolicy.title", "Privacy Policy")} | ${t(
+          "brandName"
+        )}`}
+        description={
+          "Read MADAR DEVELOPMENT's privacy policy to learn how we collect, use, and protect personal and organizational data when you interact with our services and website."
+        }
+        pathname={"/privacy-policy"}
+      />
       <main
         className="privacy-policy-container animate-fade-in"
         role="main"

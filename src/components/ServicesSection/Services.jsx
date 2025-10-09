@@ -52,7 +52,7 @@ const Services = () => {
                   <div className="service-card rounded-lg bg-white  text-center mb-8 flex flex-col items-center justify-center min-h-[260px] h-full">
                     <img
                       src={service.image}
-                      alt=""
+                      alt={service.title || `service-${i}`}
                       className="mb-4 w-[50%] object-contain"
                       loading="lazy"
                     />

@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 import { useTranslation } from "react-i18next";
 const HeroSection = lazy(() =>
   import("../../components/homeComponents/HeroSection")
@@ -24,15 +25,14 @@ export default function HomePage() {
   const { t } = useTranslation();
   return (
     <>
-      <Helmet>
-        <title>
-          {t("home.pageTitle", "Home")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content="Madar Development provides consulting, training and institutional capacity-building in operations, finance and leadership for nonprofits, SMEs, government and industry."
-        />
-      </Helmet>
+      <SEO
+        title={`${t("home.pageTitle", "Home")} | ${t("brandName")}`}
+        description={
+          "Consulting and practical training in operations, finance and leadership for nonprofits, SMEs, government and industry."
+        }
+        pathname={"/"}
+        image={"/images/hero/people1.webp"}
+      />
       <Suspense fallback={<div>Loading...</div>}>
         <div>
           <HeroSection />

@@ -21,7 +21,7 @@ import {
   EMAILJS_USER_ID,
 } from "../../emailjsConfig";
 import "./Consultation.css";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 
 export default function Consultation() {
   const { t, i18n } = useTranslation();
@@ -94,25 +94,23 @@ export default function Consultation() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("consultation.title")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content={`Request expert consulting from ${t(
-            "brandName"
-          )} in management, finance, institutional development, and operational excellence. Tailored solutions for nonprofits, SMEs and government.`}
-        />
-      </Helmet>
-      {/* Hero Section */}
-      <div className="consultation-hero-img-section">
+      <SEO
+        title={`${t("consultation.title", "Consultation")} | ${t("brandName")}`}
+        description={
+          "Tailored advisory services: strategy, organizational assessments, and operational improvement to strengthen institutional performance."
+        }
+        pathname={"/consultation"}
+      />
+
+      <div className="consultation-hero-img-section w-100">
         <div className="consultation-hero-img-wrapper">
           <img
             src={ConsultationHeroImg}
             alt="Consultation Hero"
             className="consultation-hero-img"
             loading="lazy"
+            width={1600}
+            height={420}
           />
           <div className="consultation-hero-overlay" />
           <div className="consultation-hero-text">
@@ -255,6 +253,8 @@ export default function Consultation() {
                 alt="Consultation Team"
                 className="consultation-intro-img"
                 loading="lazy"
+                width={520}
+                height={360}
               />
               <div className="consultation-intro-img-overlay">
                 <div className="consultation-intro-experience">

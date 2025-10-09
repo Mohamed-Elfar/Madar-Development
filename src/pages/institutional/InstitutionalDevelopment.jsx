@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import "./InstitutionalDevelopment.css";
 import { useTranslation } from "react-i18next";
@@ -14,18 +14,14 @@ export default function InstitutionalDevelopment() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("institutional.title")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content={t(
-            "institutional.metaDescription",
-            "Institutional development consulting: governance, strategic planning, policies, and capacity building to strengthen organizational performance."
-          )}
-        />
-      </Helmet>
+      <SEO
+        title={`${t("institutional.title")} | ${t("brandName")}`}
+        description={t(
+          "institutional.metaDescription",
+          "Institutional development consulting: governance, strategic planning, policies, and capacity building to strengthen organizational performance."
+        )}
+        pathname={"/institutional-development"}
+      />
 
       <div className="institutional-hero">
         <div className="institutional-hero-img">
@@ -33,6 +29,8 @@ export default function InstitutionalDevelopment() {
             src="/images/Institutional-Development-Consulting.webp"
             alt="Institutional Development"
             loading="lazy"
+            width={1400}
+            height={420}
           />
           <div className="institutional-hero-overlay" />
           <div className="institutional-hero-content">

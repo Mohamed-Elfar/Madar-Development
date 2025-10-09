@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://madar-development.com/sitemap.xml
+
+# Helpful: If you have language-specific sections, you can list them here
+# Sitemap: https://madar-development.com/sitemap-en.xml
+# Sitemap: https://madar-development.com/sitemap-ar.xml

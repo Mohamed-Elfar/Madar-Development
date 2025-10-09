@@ -118,18 +118,14 @@ export default function ProjectsDivision() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {pageTitle || t("institutional.title")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content={t("projectsDivision.metaDescription", {
-            defaultValue:
-              "Proposal writing, project management, monitoring & evaluation, project closure and project unit services to support funded programs and ensure sustainable delivery.",
-          })}
-        />
-      </Helmet>
+      <SEO
+        title={`${pageTitle || t("institutional.title")} | ${t("brandName")}`}
+        description={t("projectsDivision.metaDescription", {
+          defaultValue:
+            "Proposal writing, project management, monitoring & evaluation and project unit services to support funded programs.",
+        })}
+        pathname={"/projects-division"}
+      />
 
       {/* Hero Section */}
       <div className="projects-hero-img-section w-100">
@@ -139,6 +135,8 @@ export default function ProjectsDivision() {
             alt="Projects Hero"
             className="projects-hero-img"
             loading="lazy"
+            width={1600}
+            height={420}
           />
           <div className="projects-hero-overlay" />
           <div className="projects-hero-text">

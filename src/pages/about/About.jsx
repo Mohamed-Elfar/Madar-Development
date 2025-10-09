@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 import { useTranslation } from "react-i18next";
 import {
   Hero,
@@ -14,15 +14,14 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("About.title", "About")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content="Learn about MADAR DEVELOPMENT's mission, founders, and integrated consulting and training services that deliver measurable organizational impact."
-        />
-      </Helmet>
+      <SEO
+        title={`${t("About.title", "About")} | ${t("brandName")}`}
+        description={
+          "Learn about MADAR DEVELOPMENT's mission, founders, and integrated consulting and training services that deliver measurable organizational impact."
+        }
+        pathname={"/about"}
+        image={"/images/whoWeAre.webp"}
+      />
       <div ref={heroRef}>
         <Hero />
       </div>

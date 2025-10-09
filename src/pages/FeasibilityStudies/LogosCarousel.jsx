@@ -59,8 +59,7 @@ export default function LogosCarousel({ images = [] }) {
         onSwiper={(sw) => (swiperRef.current = sw)}
         spaceBetween={160}
         slidesPerView={"auto"}
-        freeMode={true}
-        freeModeMomentum={false}
+        freeMode={{ enabled: true, momentum: false }}
         loop={true}
         speed={1000}
         autoplay={{

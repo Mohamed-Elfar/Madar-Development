@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import SEO from "../SEO/SEO";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import MySwal from "../../swalConfig";
@@ -90,18 +90,14 @@ export default function ContactUs() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {t("contact.metaTitle", "Contact Us | MADAR DEVELOPMENT")}
-        </title>
-        <meta
-          name="description"
-          content={t(
-            "contact.metaDescription",
-            "Contact MADAR DEVELOPMENT for consulting, training, partnership, grant support, or general inquiries. Reach our Riyadh office or send us a message to discuss how we can help your organisation."
-          )}
-        />
-      </Helmet>
+      <SEO
+        title={t("contact.metaTitle", "Contact Us | MADAR DEVELOPMENT")}
+        description={t(
+          "contact.metaDescription",
+          "Contact MADAR DEVELOPMENT for consulting, training, partnership, grant support, or general inquiries. Reach our Riyadh office or send us a message to discuss how we can help your organisation."
+        )}
+        pathname={"/contact"}
+      />
 
       {/* Header hero */}
       <div

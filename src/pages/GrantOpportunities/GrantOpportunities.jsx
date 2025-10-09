@@ -2,25 +2,21 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./GrantOpportunities.css";
 import LogosCarousel from "./LogosCarousel";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../components/SEO/SEO";
 
 export default function GrantOpportunities() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n && i18n.language && i18n.language.startsWith("ar");
   return (
     <>
-      <Helmet>
-        <title>
-          {t("grant.title", "فرص المنح المالية")} | {t("brandName")}
-        </title>
-        <meta
-          name="description"
-          content={t(
-            "grant.metaDescription",
-            "Curated list of donor institutions and grant opportunities that support financial sustainability, community projects and nonprofit program funding."
-          )}
-        />
-      </Helmet>
+      <SEO
+        title={`${t("grant.title", "فرص المنح المالية")} | ${t("brandName")}`}
+        description={t(
+          "grant.metaDescription",
+          "Curated list of donor institutions and grant opportunities that support financial sustainability, community projects and nonprofit program funding."
+        )}
+        pathname={"/grant-opportunities"}
+      />
       <div className="grant-hero-img-section w-100">
         <div className="grant-hero-img-wrapper">
           <img
@@ -28,6 +24,8 @@ export default function GrantOpportunities() {
             alt="Grant Opportunities Hero"
             className="grant-hero-img"
             loading="lazy"
+            width={1600}
+            height={420}
           />
           <div className="grant-hero-overlay" />
           <div className="grant-hero-text">

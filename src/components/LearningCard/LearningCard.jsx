@@ -1,12 +1,7 @@
 import "./LearningCard.css";
 import Button from "../Button/Button";
 
-export default function LearningCard({
-  image,
-  title,
-  description,
-  cardId,
-}) {
+export default function LearningCard({ image, title, description, cardId }) {
   return (
     <div className="flex flex-col items-center text-center h-full">
       <div
@@ -15,7 +10,7 @@ export default function LearningCard({
       >
         <img
           src={image}
-          alt=""
+          alt={title || "learning-card-image"}
           className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 mb-4 mx-auto absolute z-10 top-[-50px] left-1/2 transform -translate-x-1/2 three-d-img"
           loading="lazy"
         />
