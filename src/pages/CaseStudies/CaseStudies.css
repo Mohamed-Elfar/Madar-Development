@@ -1,11 +1,8 @@
-/* Minimal case-study styles derived from Consultation layout
-   Only include selectors actually used by the CaseStudies page. */
-
 /* Hero */
 .case-study-hero-img-section {
   width: 100%;
   position: relative;
-  min-height: 340px;
+  min-height: 260px;
   max-height: 420px;
   overflow: hidden;
   margin-bottom: 0;

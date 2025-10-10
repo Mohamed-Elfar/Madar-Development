@@ -290,6 +290,10 @@ export default function Footer() {
               </h3>
               <ul className="cat-dropdown-menu">
                 {[
+                  {
+                    label: `${t("navbar.caseStudies")}`,
+                    href: "/case-studies",
+                  },
                   { label: `${t("navbar.about")}`, href: "/about" },
                   {
                     label: `${t("privacyPolicy.privacyPolicy")}`,

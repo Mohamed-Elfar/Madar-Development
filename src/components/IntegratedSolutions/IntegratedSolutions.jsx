@@ -7,7 +7,7 @@ const IntegratedSolutions = () => {
 
   return (
     <section
-      className="integrated-solutions-section mx-0"
+      className="integrated-solutions-section mx-0 py-5"
       aria-labelledby="integrated-solutions-title"
     >
       <div className="container">
