@@ -5,7 +5,7 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "./GrantOpportunities.css";
 
-export default function LogosCarousel({ images = [] }) {
+export default function LogosCarousel({ images = [], loop = true, stopOnLast = false }) {
   const swiperRef = useRef(null);
   const { i18n } = useTranslation();
 
@@ -57,13 +57,22 @@ export default function LogosCarousel({ images = [] }) {
         spaceBetween={160}
         slidesPerView={"auto"}
         freeMode={{ enabled: true, momentum: false }}
-        loop={true}
+        loop={loop}
         speed={1000}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        autoplay={
+          loop
+            ? {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }
+            : {
+                delay: 1000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                stopOnLastSlide: stopOnLast,
+              }
+        }
         breakpoints={{
           320: { slidesPerView: 1.5, spaceBetween: 0 },
           640: { slidesPerView: 3, spaceBetween: 0 },

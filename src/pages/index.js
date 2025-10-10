@@ -8,7 +8,7 @@ import InstitutionalDevelopment from "./Institutional/InstitutionalDevelopment";
 import ProjectsDivision from "./ProjectsDivision/ProjectsDivision";
 import CaseStudies from "./CaseStudies/CaseStudies";
 import ContactUs from "./ContactUs/ContactUs";
-
+import LogosCarousel from "./GrantOpportunities/LogosCarousel";
 export {
   HomePage,
   SplashPage,
@@ -20,4 +20,5 @@ export {
   InstitutionalDevelopment,
   ProjectsDivision,
   CaseStudies,
+  LogosCarousel,
 };

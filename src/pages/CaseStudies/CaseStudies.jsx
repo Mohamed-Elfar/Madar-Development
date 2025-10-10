@@ -18,7 +18,7 @@ const projects = [
 // Static mapping of images for each case-study folder. We generate arrays based on expected counts.
 const sampleImages = {
   "case-study-1": Array.from({ length: 9 }).map(
-    (_, i) => `${IMG_BASE}/case-study-1/${i + 1}.jpg`
+    (_, i) => `${IMG_BASE}/case-study-1/${i + 1}.webp`
   ),
   "case-study-2": Array.from({ length: 4 }).map(
     (_, i) => `${IMG_BASE}/case-study-2/${i + 1}.webp`

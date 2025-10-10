@@ -218,7 +218,13 @@
 
   "partners": {
     "title": "Our Partners",
-    "description": "Over the years, we have proudly partnered with leading organizations across sectors, helping them reach their full potential, transform complexity into clarity, and achieve measurable, lasting impact."
+    "description": "Over the years, we have proudly partnered with leading organizations across sectors, helping them reach their full potential, transform complexity into clarity, and achieve measurable, lasting impact.",
+    "list": [
+      "Industrial Exporters Association",
+      "Medical Engineering Technology Association",
+      "Wusool Charity Association",
+      "Joud Association for Nonprofit Service"
+    ]
   },
   "founders": {
     "title": "Meet The Founders",
