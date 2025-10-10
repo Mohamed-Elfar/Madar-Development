@@ -88,7 +88,7 @@ const About = () => {
 
               <div className="logos-swiper-wrapper">
                 <div
-                  className="logos-swiper"
+                  className="logos-swiper !flex-wrap md:!flex-nowrap"
                   style={{ display: "flex", gap: "1rem", alignItems: "center" }}
                 >
                   {(() => {
@@ -118,7 +118,7 @@ const About = () => {
                     ].map((item, i) => (
                       <div
                         key={i}
-                        className="logo-slide"
+                        className="logo-slide wrap"
                         style={{ width: 170 }}
                       >
                         <div className={`logo-item !h-[150px]`}>
