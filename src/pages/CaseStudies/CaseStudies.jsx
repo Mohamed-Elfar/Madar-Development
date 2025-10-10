@@ -335,6 +335,7 @@ const CaseStudies = () => {
               src={lightbox.src}
               alt={`${projectTitle} — enlarged image ${lightbox.index + 1}`}
               className="w-full h-auto max-h-[80vh] object-contain mx-auto rounded"
+              loading="lazy"
             />
           </div>
         </div>

@@ -95,7 +95,14 @@ export const createEmailTemplate = (formData) => {
     <body>
       <div class="container">
         <div class="header">
-          <img src="https://your-live-website.com/images/logo.png" alt="Madar Development Logo">
+          <!-- Logo: use absolute HTTPS URL and inline styles for email clients. If the client blocks images it will show alt text; provide a direct link below so users can view the image in a browser. -->
+          <a href="https://madardevelopment.com/images/logo.png" target="_blank" rel="noopener noreferrer" style="display:inline-block;">
+            <!-- Inline SVG data-URI used as the visible logo inside email (safer fallback when remote images are blocked) -->
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='80'><rect width='100%25' height='100%25' fill='%23189748'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%23ffffff'>MADAR%20DEVELOPMENT</text></svg>" alt="Madar Development Logo" style="display:block;max-width:150px;margin:0 auto;border:0;" width="150">
+          </a>
+          <div style="margin-top:8px;font-size:12px;color:#ffffff;">
+            <a href="https://madardevelopment.com/images/logo.png" target="_blank" rel="noopener noreferrer" style="color:#ffffff;text-decoration:underline;">Open images in browser</a>
+          </div>
         </div>
         <div class="content">
           <h1>New ${formType || "Form"} Submission</h1>

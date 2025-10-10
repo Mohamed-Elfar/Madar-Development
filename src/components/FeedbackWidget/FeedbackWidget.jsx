@@ -164,7 +164,6 @@ export default function FeedbackWidget() {
       setSelectedType(null);
       setIsOpen(false);
     } catch (error) {
-      console.error("Submission error:", error);
       MySwal.fire({
         icon: "error",
         title: t("feedback.errorTitle"),

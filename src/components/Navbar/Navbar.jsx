@@ -88,7 +88,7 @@ const Navbar = memo(() => {
               className="h-15"
               width="60"
               height="60"
-              loading="eager"
+              loading="lazy"
             />
             <div className="company-brand">
               <div className="brand-name" aria-label={t("brandName")}>
