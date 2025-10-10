@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import SEO from "../SEO/SEO";
+import SEO from "../../components/SEO/SEO";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import MySwal from "../../swalConfig";
-import { createEmailTemplate } from "../EmailTemplate/emailTemplate";
+import { createEmailTemplate } from "../../components/EmailTemplate/emailTemplate";
 import {
   EMAILJS_SERVICE_ID,
   EMAILJS_TEMPLATE_ID,

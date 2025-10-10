@@ -107,14 +107,26 @@ const SEO = ({
       <meta name="msapplication-TileColor" content="#189748" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {/* Canonical URL (per page) */}
-  <link rel="canonical" href={url.replace(/\/$/, "") + pathname} />
+      {/* Canonical URL (per page) */}
+      <link rel="canonical" href={url.replace(/\/$/, "") + pathname} />
 
-  {/* Language / hreflang - use absolute URLs and include x-default */}
-  <meta property="og:locale" content="en_US" />
-  <link rel="alternate" href={url.replace(/\/$/, "") + pathname} hrefLang="en" />
-  <link rel="alternate" href={url.replace(/\/$/, "") + '/ar' + pathname} hrefLang="ar" />
-  <link rel="alternate" href={url.replace(/\/$/, "") + pathname} hrefLang="x-default" />
+      {/* Language / hreflang - use absolute URLs and include x-default */}
+      <meta property="og:locale" content="en_US" />
+      <link
+        rel="alternate"
+        href={url.replace(/\/$/, "") + pathname}
+        hrefLang="en"
+      />
+      <link
+        rel="alternate"
+        href={url.replace(/\/$/, "") + "/ar" + pathname}
+        hrefLang="ar"
+      />
+      <link
+        rel="alternate"
+        href={url.replace(/\/$/, "") + pathname}
+        hrefLang="x-default"
+      />
 
       {/* Robots */}
       <meta name="robots" content="index, follow" />

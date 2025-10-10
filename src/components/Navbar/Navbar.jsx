@@ -188,6 +188,15 @@ const Navbar = memo(() => {
               </li>
               <li>
                 <NavLink
+                  to="/case-studies"
+                  className="hover:text-primary-700 font-bold no-underline transition-colors duration-200 text-black"
+                  aria-label="Case Studies"
+                >
+                  {t("navbar.caseStudies")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/contact"
                   className="hover:text-primary-700 font-bold no-underline transition-colors duration-200 text-black"
                   aria-label="Contact Us page"
@@ -296,6 +305,15 @@ const Navbar = memo(() => {
               onClick={toggleMobileMenu}
             >
               {t("navbar.about")}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/case-studies"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-700 hover:bg-gray-50"
+              onClick={toggleMobileMenu}
+            >
+              {t("navbar.caseStudies")}
             </NavLink>
           </li>
           <li>

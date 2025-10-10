@@ -16,6 +16,7 @@ import {
   ConsultationPage,
   GrantOpportunities,
   ProjectsDivision,
+  CaseStudies,
   InstitutionalDevelopment,
 } from "../pages";
 import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
@@ -41,6 +42,9 @@ const router = createBrowserRouter(
       </Route>
       <Route path="grant-opportunities" element={<RootLayout />}>
         <Route index element={<GrantOpportunities />} />
+      </Route>
+      <Route path="case-studies" element={<RootLayout />}>
+        <Route index element={<CaseStudies />} />
       </Route>
       <Route path="projects-division" element={<RootLayout />}>
         <Route index element={<ProjectsDivision />} />

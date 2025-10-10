@@ -25,7 +25,22 @@
     "training": "Training",
     "ourServices": "Our Services",
     "consultation": "Consulting",
-    "grantOpportunities": "Grant Opportunities"
+    "grantOpportunities": "Grant Opportunities",
+    "caseStudies": "Case Studies"
+  },
+  "caseStudies": {
+    "heroTitle": "Case Studies",
+    "subtitle": "Selected Projects",
+    "intro": "Browse our completed projects and case studies.",
+    "projects": {
+      "0": "Case Study Project 1",
+      "1": "Case Study Project 2",
+      "2": "Case Study Project 3",
+      "3": "Case Study Project 4",
+      "4": "Case Study Project 5"
+    },
+    "close": "Close",
+    "noImages": "No images for this project yet."
   },
   "home": {
     "pageTitle": "Welcome to the Home Page"
